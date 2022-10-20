@@ -7,8 +7,8 @@
       
       <div class="links">
         <nav>
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
+          <router-link class="link" to="/">Home</router-link>
+          <router-link class="link" to="/about">About</router-link>
         </nav>
       </div>
     </div>
@@ -54,20 +54,22 @@
 }
 
 .links {
-height: 100%;
+height: 30px;
 width: 70%;
 display: flex;
 justify-content: right;
-align-items: center;
-padding-top: 20px;
 }
 
 nav {
-  height: 100%;
+  height: 50px;
   display: flex;
-  align-items: center;
-  
+    
+}
 
+.link{
+  padding: 0 10px;
+  max-width: 90px;
+    
 }
 
 nav a {
@@ -81,10 +83,12 @@ nav a {
 nav a:hover {
   border-bottom:5px solid;
   font-size: 28px;
-  transition: 0.3s ease  all;
+  transition: 0.2s ease  all;
+  
 }
 
 nav a.router-link-exact-active {
   color: #f6f6f6;
+  
 }
 </style>
