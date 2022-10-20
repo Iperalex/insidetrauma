@@ -78,17 +78,19 @@ nav a {
   color: #9a9e9e;
   font-size: 25px;
   text-decoration: none;
+  
 }
 
 nav a:hover {
   border-bottom:5px solid;
-  font-size: 28px;
+  font-size: 26px;
   transition: 0.2s ease  all;
-  
+    
 }
 
 nav a.router-link-exact-active {
   color: #f6f6f6;
+  border-bottom:5px solid;
   
 }
 </style>
