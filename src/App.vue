@@ -1,51 +1,87 @@
 <template>
   <div id="app">    
-    <div class="divlogo">
-      <img id="logoinside" src="./assets/logoinside.png" alt="">
+    <div class="header">
+      <div class="divlogo">
+        <img id="logoinside" src="./assets/logoinside.png" alt="">
+      </div>
+      
+      <div class="links">
+        <nav>
+          <router-link to="/">Home</router-link>
+          <router-link to="/about">About</router-link>
+        </nav>
+      </div>
     </div>
-    
-    <nav class="links">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+
+    <div class="router">
+      <router-view/>
+    </div>
   
   </div>
 </template>
 
 <style>
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.router {
+ 
+}
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  width: 100%;
-  height: 60px;
-  background-color: #d5112d;
-  margin: 25px 0px;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
-.divlogo{
-  float: left;
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #d5112e;
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
 }
 
 #logoinside {
-  max-height: 60px;
+  height: 60px;
+  margin-top: 4px;
 }
 
 .links {
-float: right;
+height: 100%;
+width: 70%;
+display: flex;
+justify-content: right;
 align-items: center;
-max-width: 50%;
+padding-top: 20px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
 
 }
 
 nav a {
+  height: 100%;
   font-weight: bold;
   color: #9a9e9e;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom:5px solid;
+  font-size: 28px;
+  transition: 0.3s ease  all;
 }
 
 nav a.router-link-exact-active {
