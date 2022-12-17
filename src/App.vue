@@ -5,14 +5,16 @@
         <img id="logoinside" src="./assets/logoinside.png" alt="">
       </div>
       
-      <div class="links">
-        <nav>
-          <router-link class="link" to="/">Home</router-link>
-          <router-link class="link" to="/formazione">Formazione</router-link>
-          <router-link class="link" to="/faculty">Faculty</router-link>
-          <router-link class="link" to="/contatti">Contatti</router-link>
+      
+        <nav class="links">
+          <ul>
+            <li><router-link class="link" to="/"><span>Home</span> </router-link></li>
+            <li><router-link class="link" to="/formazione"><span>Formazione</span></router-link></li>
+            <li><router-link class="link" to="/faculty"><span>Faculty</span></router-link></li>
+            <li><router-link class="link" to="/contatti"><span>Contatti</span></router-link></li>
+          </ul>
         </nav>
-      </div>
+      
     </div>
 
     <div class="router">
@@ -22,6 +24,7 @@
   </div>
 </template>
 
+
 <style>
 
 *{
@@ -29,11 +32,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.router {
- 
-}
-
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -56,41 +54,71 @@
 }
 
 .links {
-height: 30px;
+height: 100%;
 width: 70%;
-display: flex;
-justify-content: right;
-}
 
-nav {
-  height: 50px;
-  display: flex;
-    
 }
 
 .link{
-    padding: 0 30px;
-      
+    padding: 0 20px;
+    transition: 0.2s ease  all; 
+}
+
+ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 nav a {
   height: 100%;
   font-weight: bold;
   color: #9a9e9e;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
   
 }
 
-nav a:hover {
-  border-bottom:5px solid;
-  transition: 0.2s ease  all;
-    
+
+.link:hover{
+  border-bottom:5px solid #9a9e9e;
 }
 
-nav a.router-link-exact-active {
+nav a.router-link-exact-active{
   color: #f6f6f6;
   border-bottom:5px solid;
   
 }
+nav a.router-link-exact-active:hover{
+  color: #f6f6f6;
+  border-bottom:5px solid;
+  
+}
+
+/* @media screen and (max-width:805px) {
+     {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+  } */
+
 </style>
