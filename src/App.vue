@@ -8,7 +8,9 @@
       <div class="links">
         <nav>
           <router-link class="link" to="/">Home</router-link>
-          <router-link class="link" to="/about">About</router-link>
+          <router-link class="link" to="/formazione">Formazione</router-link>
+          <router-link class="link" to="/faculty">Faculty</router-link>
+          <router-link class="link" to="/contatti">Contatti</router-link>
         </nav>
       </div>
     </div>
@@ -67,23 +69,21 @@ nav {
 }
 
 .link{
-  padding: 0 10px;
-  max-width: 90px;
-    
+    padding: 0 30px;
+      
 }
 
 nav a {
   height: 100%;
   font-weight: bold;
   color: #9a9e9e;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   
 }
 
 nav a:hover {
   border-bottom:5px solid;
-  font-size: 26px;
   transition: 0.2s ease  all;
     
 }

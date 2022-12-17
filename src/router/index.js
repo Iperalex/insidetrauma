@@ -11,13 +11,29 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/contatti',
+    name: 'contatti',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    component: () => import(/* webpackChunkName: "Contatti" */ '../views/Contatti.vue')
+  },
+  {
+    path: '/faculty',
+    name: 'faculty',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Faculty" */ '../views/Faculty.vue')
+  },
+  {
+    path: '/formazione',
+    name: 'formazione',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Fromazione" */ '../views/Formazione.vue')
+  },
 ]
 
 const router = new VueRouter({
