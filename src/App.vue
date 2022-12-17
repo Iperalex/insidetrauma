@@ -1,6 +1,7 @@
 <template>
   <div id="app">    
     <div class="header">
+      
       <div class="divlogo">
         <img id="logoinside" src="./assets/logoinside.png" alt="">
       </div>
@@ -48,6 +49,8 @@
   align-items: center;
 }
 
+
+
 #logoinside {
   height: 60px;
   margin-top: 4px;
@@ -56,7 +59,6 @@
 .links {
 height: 100%;
 width: 70%;
-
 }
 
 .link{
@@ -71,6 +73,7 @@ ul{
   justify-content: right;
   align-items: center;
 }
+
 
 li{
   list-style: none;
@@ -103,22 +106,11 @@ nav a.router-link-exact-active{
 nav a.router-link-exact-active:hover{
   color: #f6f6f6;
   border-bottom:5px solid;
-  
 }
 
-/* @media screen and (max-width:805px) {
-     {
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(22, 7, 36);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 4rem;
-        left: 100%;
-        transition: all 1s;
-    }
-  } */
+
+@media (max-width: 805px) {
+ 
+}
 
 </style>
