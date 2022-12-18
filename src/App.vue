@@ -7,9 +7,9 @@
       </div>
       
       
-        <nav class="links">
+        <nav class="links" id="click">
           <ul class="ulNav">
-            <li class="hamburger"><i class="fa-solid fa-bars"></i></li>
+            <li class="hamburger"> <i class="fa-solid fa-bars"></i></li>
             <li class="linav"><router-link class="link" to="/"><span>Home</span> </router-link></li>
             <li class="linav"><router-link class="link" to="/formazione"><span>Formazione</span></router-link></li>
             <li class="linav"><router-link class="link" to="/faculty"><span>Faculty</span></router-link></li>
@@ -25,6 +25,9 @@
   
   </div>
 </template>
+
+
+
 
 
 <style>
@@ -51,14 +54,30 @@
     right: 0;
     width: 300px;
     height: 100vh;
-    background-color: #d5112e;
+    background-color: #d5112ee1;
 
   }
 
   .hamburger{
-    height: 150px;
+    display: block;
     list-style: none;
+       
   }
+
+  .fa-solid{
+    font-size: 70px;
+    color: white;
+    margin: 35px;
+  }
+
+  .fa-solid:hover{
+    font-size: 70px;
+    color: #9a9e9e;
+    margin: 35px;
+  }
+
+
+
 
   .linav{
     height: 220px;
