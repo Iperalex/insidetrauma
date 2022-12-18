@@ -3,16 +3,17 @@
     <div class="header">
       
       <div class="divlogo">
-        <img id="logoinside" src="./assets/logoinside.png" alt="">
+        <a href="/"><img id="logoinside" src="./assets/logoinside.png" alt=""></a>
       </div>
       
       
         <nav class="links">
-          <ul>
-            <li><router-link class="link" to="/"><span>Home</span> </router-link></li>
-            <li><router-link class="link" to="/formazione"><span>Formazione</span></router-link></li>
-            <li><router-link class="link" to="/faculty"><span>Faculty</span></router-link></li>
-            <li><router-link class="link" to="/contatti"><span>Contatti</span></router-link></li>
+          <ul class="ulNav">
+            <li class="hamburger"><i class="fa-solid fa-bars"></i></li>
+            <li class="linav"><router-link class="link" to="/"><span>Home</span> </router-link></li>
+            <li class="linav"><router-link class="link" to="/formazione"><span>Formazione</span></router-link></li>
+            <li class="linav"><router-link class="link" to="/faculty"><span>Faculty</span></router-link></li>
+            <li class="linav"><router-link class="link" to="/contatti"><span>Contatti</span></router-link></li>
           </ul>
         </nav>
       
@@ -40,9 +41,40 @@
   -moz-osx-font-smoothing: grayscale;  
 }
 
+ 
+  .ulNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #d5112e;
+
+  }
+
+  .hamburger{
+    height: 150px;
+    list-style: none;
+  }
+
+  .linav{
+    height: 220px;
+    width: 100%;
+    list-style: none;
+  }
+
+
+  .link span{
+    font-size: 42px;
+  }
+ 
+
 .header {
   width: 100%;
-  height: 70px;
+  height: 150px;
   background-color: #d5112e;
   margin: 25px 0px;
   display: flex;
@@ -58,7 +90,7 @@
 
 .links {
 height: 100%;
-width: 70%;
+width: 100%;
 }
 
 .link{
@@ -66,27 +98,47 @@ width: 70%;
     transition: 0.2s ease  all; 
 }
 
-ul{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
+@media screen and (min-width: 992px){
+  
+  .header{
+    height: 70px;
+  }
+
+  
+  .ulNav{
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: unset;
+    background-color: transparent;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .linav{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  .link span{
+    font-size: 20px;
+  }
+ 
 }
 
 
-li{
-  list-style: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
 
 nav a {
   height: 100%;
   font-weight: bold;
   color: #9a9e9e;
-  font-size: 16px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -109,8 +161,5 @@ nav a.router-link-exact-active:hover{
 }
 
 
-@media (max-width: 805px) {
- 
-}
 
 </style>
