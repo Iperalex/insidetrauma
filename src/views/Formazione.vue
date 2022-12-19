@@ -1,5 +1,25 @@
 <template>
-    <div class="formazione">
-      <h1>This is an Formazione page</h1>
-    </div>
-  </template>
+  <div class="formazione">
+    <Header/>
+    <MainFormazione/>
+    <Footer/>
+  </div>
+</template>
+
+
+
+
+<script>
+  import Header from'@/components/Header.vue';
+  import MainFormazione from '@/components/MainFormazione.vue';
+  import Footer from '@/components/Footer.vue';
+
+  export default {
+    name: 'Formazione',
+    components: {
+      Header,
+      MainFormazione,
+      Footer,
+    }
+  }
+</script>

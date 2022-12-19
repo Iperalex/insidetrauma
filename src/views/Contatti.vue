@@ -1,5 +1,26 @@
 <template>
   <div class="contatti">
-    <h1>This is an Contatti page</h1>
+    <Header/>
+    <MainContatti/>
+    <Footer/>
   </div>
 </template>
+
+
+
+
+<script>
+  import Header from'@/components/Header.vue';
+  import MainContatti from '@/components/MainContatti.vue';
+  import Footer from '@/components/Footer.vue';
+
+
+  export default {
+    name: 'Contatti',
+    components: {
+      Header,
+      MainContatti,
+      Footer
+    }
+  }
+</script>

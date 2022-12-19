@@ -1,25 +1,21 @@
 <template>
-  <div class="faculty">
+  <div class="home">
     <Header/>
-    <MainFaculty/>
+    <MainHome/>
     <Footer/>
   </div>
 </template>
 
-
-
-
 <script>
   import Header from'@/components/Header.vue';
-  import MainFaculty from '@/components/MainFaculty.vue';
+  import MainHome from '@/components/MainHome.vue';
   import Footer from '@/components/Footer.vue';
 
-
   export default {
-    name: 'Faculty',
+    name: 'Home',
     components: {
       Header,
-      MainFaculty,    
+      MainHome,
       Footer,
     }
   }

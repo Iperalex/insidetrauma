@@ -1,38 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home.vue'
+import Formazione from '../views/Formazione.vue'
+import Faculty from '../views/Faculty.vue'
+import Contatti from '../views/Contatti.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'Home',
+    component: Home
   },
+
+  {
+    path: '/formazione',
+    name: 'Formazione',
+    component: Formazione
+  },
+
+  {
+    path: '/faculty',
+    name: 'Faculty',
+    component: Faculty
+  },
+  
   {
     path: '/contatti',
     name: 'contatti',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Contatti" */ '../views/Contatti.vue')
-  },
-  {
-    path: '/faculty',
-    name: 'faculty',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Faculty" */ '../views/Faculty.vue')
-  },
-  {
-    path: '/formazione',
-    name: 'formazione',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Fromazione" */ '../views/Formazione.vue')
+    component: Contatti
   },
 ]
 
