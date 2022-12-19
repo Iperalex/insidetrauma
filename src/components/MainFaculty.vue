@@ -1,6 +1,6 @@
 <template>
     <div class="mainfaculty">
-
+        pagina faculty
     </div>
 </template>
 

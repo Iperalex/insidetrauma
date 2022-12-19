@@ -1,6 +1,6 @@
 <template>
     <div class="mainformazione">
-
+        pagina formazione
     </div>
 </template>
 

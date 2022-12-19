@@ -1,24 +1,28 @@
 <template>
-    <header class="header" id="page-0">
-        <div class="divlogo">
-            <a href="/"><img id="logoinside" src="../assets/logoinside.png" alt="">
-            </a>
-        </div>
-      
-      
-        <nav class="links">
-            <ul class="ulNav">
-                <li class="hamburger"> <i class="fa-solid fa-bars"></i></li>
-                <li class="linav"><router-link class="link" to="/"><span>Home</span> </router-link></li>
-                <li class="linav"><router-link class="link" to="/formazione"><span>Formazione</span></router-link></li>
-                <li class="linav"><router-link class="link" to="/faculty"><span>Faculty</span></router-link></li>
-                <li class="linav"><router-link class="link" to="/contatti"><span>Contatti</span></router-link></li>
-            </ul>
-      </nav>
+  <header class="header" id="page-0">
+    <div class="divlogo">
+      <a href="/"><img id="logoinside" src="../assets/logoinside.png" alt="">
+      </a>
+    </div>
 
+    <nav class="links">
 
-    </header>
+      <button @click="menu" class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span  class="navbar-toggler-icon">
+        </span>
+      </button>
 
+      <div class="col-sm-5 collapse navbar-collapse headerRight bg-white" id="navbarSupportedContent" :class="showMenu()">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-sm-5 py-lg-0">
+          <li class="nav-item dropdown me-3 py-2 position-static" v-for="(element, index) in links" :key="index">
+            <a @click="linkMobile" :href=(element.url) :target=(element.target) :class='{active: element.current==true}'>{{element.text}}</a>
+          </li>
+        </ul> 
+      </div>
+
+    </nav>
+
+  </header>
 </template>
 
 
@@ -27,16 +31,73 @@
 <script>
   export default {
     name: 'Header',
-    props: {
-      msg: String
-    }
+    data (){
+      return{
+        menustatus: false,
+        links:[
+
+            {
+              text: "Home",
+              url:"./#/",
+              current: false,
+            },
+
+            {
+              text: "Formazione",
+              url:"./#/formazione/",
+              current: false,
+            },
+
+            {
+              text: "Faculty",
+              url:"./#/faculty/",
+              current: false,
+            },
+
+            {
+              text: "Contatti",
+              url:"./#/contatti/",
+              current: false,
+            },
+
+        ]
+      }
+    },
+
+    methods:{
+    menu: function(){
+        if(this.menuStatus===false){
+          this.menuStatus=true;
+        }else 
+        if(this.menuStatus===true){
+            this.menuStatus=false;
+            console.log(this.menuStatus)
+        }
+    },
+    linkMobile: function(){
+        if(this.menuStatus===true){
+          this.menuStatus=false;
+        }
+    },
+   showMenu(){
+        if(this.menuStatus === true){
+          return "show";
+        }
+        return "";
+    },
+
+  },
+  
+
+
+
   }
 </script>
 
 
 
 
-<style>
+<style scoped>
 
     *{
       margin: 0;
