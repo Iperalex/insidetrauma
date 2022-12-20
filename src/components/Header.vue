@@ -1,14 +1,14 @@
 <template>
   <header class="header" id="page-0">
-    <div class="divlogo">
+    <div>
       <a href="/"><img id="logoinside" src="../assets/logoinside.png" alt="">
       </a>
     </div>
 
-    <nav class="links">
+    <nav>
 
       <button @click="menu" class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span  class="navbar-toggler-icon">
+        <span class="navbar-toggler-icon">
         </span>
       </button>
 
@@ -30,7 +30,7 @@
 
 <script>
   export default {
-    name: 'Header',
+    name: "Header",
     data (){
       return{
         menustatus: false,
@@ -39,7 +39,7 @@
             {
               text: "Home",
               url:"./#/",
-              current: false,
+              current: true,
             },
 
             {
@@ -74,22 +74,25 @@
             console.log(this.menuStatus)
         }
     },
+
     linkMobile: function(){
         if(this.menuStatus===true){
           this.menuStatus=false;
         }
     },
-   showMenu(){
-        if(this.menuStatus === true){
-          return "show";
-        }
-        return "";
+
+    showMenu(){
+          if(this.menuStatus === true){
+            return "show";
+          }
+          return "";
+      },
+
     },
-
-  },
   
+    props:{
 
-
+    }
 
   }
 </script>
@@ -103,12 +106,9 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    #app {
       font-family: Avenir, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;  
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .header {
@@ -125,12 +125,7 @@
       margin-top: 4px;
     }
 
-    .links {
-      height: 100%;
-      width: 100%;
-    }
-
-    .ulNav {
+    .navbar-nav {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -142,24 +137,26 @@
       background-color: #d5112ee1;
     }
 
-    .hamburger{
+    .navbar-toggler{
       display: block;
-      list-style: none;
+      height: 150px;
+      background-color: #d5112e;
+      border-style: none;
     }
 
-    .fa-solid{
+    .navbar-toggler-icon{
       font-size: 70px;
-      color: white;
+      background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
       margin: 35px;
     }
 
-    .fa-solid:hover{
+    .navbar-toggler-icon:hover{
       font-size: 70px;
       color: #9a9e9e;
       margin: 35px;
     }
 
-    nav a {
+    .nav-item{
       height: 100%;
       font-weight: bold;
       color: #9a9e9e;
@@ -168,34 +165,24 @@
       align-items: center;
     }
 
-    nav a.router-link-exact-active{
+    .nav-item a{
       color: #f6f6f6;
       border-bottom:5px solid;
     }
 
-    nav a.router-link-exact-active:hover{
+    .nav-item a:hover{
+      border-bottom:5px solid #9a9e9e;
       color: #f6f6f6;
       border-bottom:5px solid;
     }
 
-    .linav{
+    .nav-item{
       height: 220px;
       width: 100%;
       list-style: none;
-    }
-
-    .link{
+      font-size: 42px;
       padding: 0 20px;
       transition: 0.2s ease  all; 
-    }
-
-    .link span{
-      font-size: 42px;
-    }
-
-
-    .link:hover{
-      border-bottom:5px solid #9a9e9e;
     }
 
 
@@ -205,7 +192,7 @@
         height: 70px;
       }
       
-      .ulNav{
+      .navbar-nav{
         height: 100%;
         width: 100%;
         flex-direction: row;
@@ -215,11 +202,11 @@
         background-color: transparent;
       }
 
-      .hamburger{
+      .navbar-toggler{
         display: none;
       }
 
-      .linav{
+      .nav-item{
         list-style: none;
         height: 100%;
         display: flex;
@@ -227,7 +214,7 @@
         width: auto;
       }
 
-      .link span{
+      .nav-item{
         font-size: 20px;
       }
 
