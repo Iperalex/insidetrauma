@@ -26,27 +26,28 @@
 </script>
 
 <style scoped>
-  /* Jumbotron */
-.jumbocontainer{
-  background-image: url(../assets/jumbotron.png);
-  background-size: cover;
-  background-position: center;
-  height: 600px
-}
-.mask{
-  background-color: transparent;
-}
-.submask{
-  background-color: transparent;
-}
-.submask2{
-  background-color: transparent;
-}
 
-.testo{
-  background-color: transparent;
-}
-/* /Jumbotron */
+    /* Jumbotron */
+  .jumbocontainer{
+    background-image: url(../assets/jumbotron.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px
+  }
+  .mask{
+    background-color: transparent;
+  }
+  .submask{
+    background-color: transparent;
+  }
+  .submask2{
+    background-color: transparent;
+  }
+
+  .testo{
+    background-color: transparent;
+  }
+  /* /Jumbotron */
 
 
 </style>
