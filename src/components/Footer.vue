@@ -22,10 +22,11 @@
           <a href="https://www.crivarese.it/varese/" target="_blank"> <img id="crilogo" src="../assets/cri logo.png" alt="cri logo"></a>
           <a href="https://www.unimi.it/" target="_blank"> <img id="unimilogo" src="../assets/unimi logo.png" alt="unimi logo"></a>
           <a href="https://www.uninsubria.it/" target="_blank"> <img id="uninsubrialogo" src="../assets/uninsubria logo.png" alt="uninsubria logo"></a>
-         </div>
-         <div class="copy">
-              <p>INSIDE TRAUMA © 2023 </p>
-          </div>
+        </div>
+
+        <div class="copy">
+          <p>INSIDE TRAUMA © 2023 - Tutti i diritti sono riservati</p>
+        </div>
 
       
       </div>
@@ -76,19 +77,18 @@ export default {
   color: white;
 }
 
-.fa-facebook{
-  font-size: 100px;
-  margin-right: 100px;
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin-in {
+  font-size: 100px; 
+  margin: 100px 20px; 
+  transition: all 0.3s ease;
 }
 
-.fa-instagram{
-  font-size: 100px;
-  margin-right: 100px;
-}
-
-.fa-linkedin-in{
-  font-size: 100px;
-  
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin-in:hover {
+  transform: scale(1.2);
 }
 
 iframe{
@@ -127,15 +127,15 @@ iframe{
 }
 
 .copy {
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   justify-content: flex-end;
   margin-right: 5%;
 }
 
-@media screen and (min-width: 992px){
-  
-  
+
+
+@media screen and (min-width: 992px){  
   
   .footercontainer{
     display: flex;
@@ -149,31 +149,25 @@ iframe{
     
    }
    
-   .socialdiv{
+  .socialdiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-   }
+  }
 
-  .fa-facebook{
+  .fa-facebook,
+  .fa-instagram,
+  .fa-linkedin-in {
     font-size: 50px; 
-    margin: 50px 20px; 
-  }
-
-  .fa-instagram{
-    font-size: 50px;
-    margin: 50px 20px; 
-  }
-
-  .fa-linkedin-in{
-    font-size: 50px;
     margin: 50px 20px; 
   }
 
   iframe{
     display: flex;
     margin: 20px;
-    height: 300px;
+    height: 250px;
+    max-width: 250px;
+    margin: 30px;
   }
 
   .placediv{
@@ -205,7 +199,7 @@ iframe{
   }
 
   .copy {
-    font-size: 15px;
+    font-size: 10px;
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
