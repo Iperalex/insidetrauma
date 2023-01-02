@@ -5,7 +5,7 @@
       <div class="submask d-flex justify-content-center align-items-center h-100">
         <div class="submask2 text-white">
           <h1 class="testo mb-3">INSIDE TRAUMA</h1>
-          <h4 class="testo mb-3">...in trauma, we CARE!</h4>
+          <h4 class="testo mb-3">...in trauma, we Care!!</h4>
           <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
         </div>
       </div>
@@ -13,6 +13,7 @@
   </div>
   <!--/jumbotron-->
 </template>
+
 
 
 

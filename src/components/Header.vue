@@ -165,6 +165,7 @@
       background-color: #d5112e;
     }
 
+
     .nav-item a{
       width: 100%;
       color: #f6f6f6;
@@ -176,7 +177,7 @@
       border-bottom:5px solid #9a9e9e;
       color: #9a9e9e;
       border-bottom:5px solid;
-      transition: 0.2s ease  all;
+      transition: 0.2s all ease;
     }
 
     .nav-item{
@@ -185,7 +186,7 @@
       list-style: none;
       font-size: 42px;
       padding: 0 20px;
-      transition: 0.2s ease  all; 
+      transition: 0.2s all ease; 
     }
   /* /navbar, contiene links, mobile */
 
