@@ -194,16 +194,24 @@
       
       .header{
         /*contiene header + tutta la navbar*/
+        height: 75px;
+      }
+
+      /* hamburger ed il suo container*/
+      .buttoncontainer {
+        margin-left: auto;
+        height: 70px;
+      }
+
+      .navbar-button{
         height: 70px;
       }
       
-    /* navbar, contiene links, desktop */
+      /* navbar, contiene links, desktop */
       .navbar-nav{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;        
+        flex-direction: column;
+        align-items: center;      
       }
-
 
       .nav-item{
         list-style: none;
