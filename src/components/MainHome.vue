@@ -1,17 +1,24 @@
 <template>
-  <!--jumbotron-->
-  <div class="jumbocontainer p-5 text-center rounded-3">
-    <div class="mask">
-      <div class="submask d-flex justify-content-center align-items-center h-100">
-        <div class="submask2 text-white">
-          <h1 class="testo mb-3">INSIDE TRAUMA</h1>
-          <h4 class="testo mb-3">...in trauma, we Care!!</h4>
-          <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
+  <div>
+    <!--jumbotron-->
+    <div class="jumbocontainer p-5 text-center rounded-3">
+      <div class="mask">
+        <div class="submask d-flex justify-content-center align-items-center h-100">
+          <div class="submask2 text-white">
+            <h1 class="testo mb-3">INSIDE TRAUMA</h1>
+            <h4 class="testo mb-3">...in trauma, we Care!!</h4>
+            <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
+          </div>
         </div>
       </div>
     </div>
+    <!--/jumbotron-->
+
+    <!--Slideshow-->
+
+    <!--/Slideshow-->
+
   </div>
-  <!--/jumbotron-->
 </template>
 
 
@@ -27,8 +34,11 @@
 </script>
 
 <style scoped>
+  *{
+    color:white
+  }
 
-    /* Jumbotron */
+  /* Jumbotron */
   .jumbocontainer{
     background-image: url(../assets/jumbotron.png);
     background-size: cover;
@@ -49,6 +59,11 @@
     background-color: transparent;
   }
   /* /Jumbotron */
+
+  /* slideshow */
+  
+  /* /slideshow */
+
 
 
 </style>
