@@ -1,6 +1,5 @@
 <template>
-  <header class="header" id="page-0">
-    
+  <header class="header" id="page-0">    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <div>
@@ -18,24 +17,7 @@
           </ul> 
         </div>
       </div>
-    </nav>
-    
-    <!-- <nav class="buttoncontainer">
-      
-      <button @click="menu" class="navbar-button me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
-      
-      <div class="col-sm-5 collapse navbar-collapse headerRight bg-white" id="navbarSupportedContent" :class="showMenu()">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-sm-5 py-lg-0">
-          <li class="nav-item dropdown me-3 py-2 position-static" v-for="(element, index) in links" :key="index">
-            <a @click="linkMobile" :href=(element.url) :target=(element.target) :class='{active: element.current==true}'>{{element.text}}</a>
-          </li>
-        </ul> 
-      </div>
-
-    </nav> -->
-
+    </nav> 
   </header>
 </template>
 
@@ -49,7 +31,6 @@
       return{
         menustatus: false,
         links:[
-
             {
               text: "Home",
               url:"./#/",
@@ -73,7 +54,6 @@
               url:"./#/contatti/",
               current: false,
             },
-
         ]
       }
     },
