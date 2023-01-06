@@ -1,11 +1,26 @@
 <template>
   <header class="header" id="page-0">
-    <div>
-      <a href="/"><img id="logoinside" src="../assets/logoinside.png" alt="">
-      </a>
-    </div>
-
-    <nav class="buttoncontainer">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div>
+          <a href="/"><img id="logoinside" src="../assets/logoinside.png" alt="">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-sm-5 py-lg-0">
+            <li class="nav-item dropdown me-3 py-2 position-static" v-for="(element, index) in links" :key="index">
+              <a @click="linkMobile" :href=(element.url) :target=(element.target) :class='{active: element.current==true}'>{{element.text}}</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    
+    <!-- <nav class="buttoncontainer">
       
       <button @click="menu" class="navbar-button me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -19,7 +34,7 @@
         </ul> 
       </div>
 
-    </nav>
+    </nav> -->
 
   </header>
 </template>
@@ -103,6 +118,7 @@
 
     *{
       background-color: #d5112e;
+      box-sizing: border-box;
     }
 
     
@@ -116,6 +132,7 @@
       align-items: center;
     }
 
+  
 
   /* logo*/
     #logoinside {
@@ -144,7 +161,13 @@
       color: #9a9e9e;
       transition: 0.2s ease  all; 
     }
+
+    .nav-item[data-v-61dd7a3d]{
+      height: 76px;
+      margin-bottom: 52px;
+    }
   /* /hamburger */
+  
 
 
   /* navbar, contiene links, mobile */
@@ -173,11 +196,26 @@
       text-decoration:none;
     }
 
-    .nav-item a:hover{
-      border-bottom:5px solid #9a9e9e;
+    .nav-item:hover{
+      border-bottom: 3px solid #9a9e9e;
+    }
+
+    .nav-item a[data-v-61dd7a3d]:hover{
+      border-bottom: none;
+    }
+
+    .nav-item:hover a{
       color: #9a9e9e;
-      border-bottom:5px solid;
+      font-weight: bolder;
       transition: 0.2s all ease;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .bg-light{
+        background-color: transparent !important;
     }
 
     .nav-item{
@@ -188,6 +226,8 @@
       padding: 0 20px;
       transition: 0.2s all ease; 
     }
+
+
   /* /navbar, contiene links, mobile */
 
 
@@ -196,6 +236,40 @@
       .header{
         /*contiene header + tutta la navbar*/
         height: 75px;
+      }
+
+      .navbar-expand-lg .navbar-nav {
+        height: 100%;
+      }
+      .navbar-expand-lg .navbar-nav[data-v-61dd7a3d] {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+        /* nav bar */
+      nav{
+        height: 100%;
+      }
+
+      .navbar-nav{
+        height: 100%;
+      }
+
+
+
+      .nav-item[data-v-61dd7a3d] {
+        height: 100%;
+        margin-bottom: 0;
+      }
+
+      .nav-item[data-v-61dd7a3d][data-v-61dd7a3d]{
+        width: 120px;
+        text-align: center;
+      }
+
+      .nav-item[data-v-61dd7a3d] {
+        padding: 0;
       }
 
       /* hamburger ed il suo container*/
