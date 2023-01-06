@@ -123,35 +123,15 @@
 
 
   /* hamburger */
-    .buttoncontainer{
-      margin-left: auto;
-    }
-
     .navbar-toggler{
       color: transparent;
-    }
-
-
-    .navbar-button{
-      align-items: center;
-      height: 120px;
-      background-color: #d5112e;
-      border-style: none;
-      font-size: 56px;
-      color: white;
-    }
-
-    .navbar-button:hover{
-      font-size: 58px;
-      color: #9a9e9e;
-      transition: 0.2s ease  all; 
     }
 
     .nav-item[data-v-61dd7a3d]{
       height: 76px;
       margin-bottom: 52px;
     }
-  /* /hamburger */
+  
     .navbar-toggler-icon{
       background-image: none;
       height: 100%;
@@ -177,6 +157,7 @@
       color: #9a9e9e;
       
     }
+  /* /hamburger */
     
 
 
@@ -197,7 +178,6 @@
       align-items: center;
       background-color: #d5112e;
     }
-
 
     .nav-item a{
       width: 100%;
@@ -236,12 +216,10 @@
       padding: 0 20px;
       transition: 0.2s all ease; 
     }
-
-
   /* /navbar, contiene links, mobile */
 
 
-    @media screen and (min-width: 992px){
+  @media screen and (min-width: 992px){
       
       .header{
         /*contiene header + tutta la navbar*/
@@ -266,8 +244,6 @@
         height: 100%;
       }
 
-
-
       .nav-item[data-v-61dd7a3d] {
         height: 100%;
         margin-bottom: 0;
@@ -280,16 +256,6 @@
 
       .nav-item[data-v-61dd7a3d] {
         padding: 0;
-      }
-
-      /* hamburger ed il suo container*/
-      .buttoncontainer {
-        margin-left: auto;
-        height: 70px;
-      }
-
-      .navbar-button{
-        height: 70px;
       }
       
       /* navbar, contiene links, desktop */
