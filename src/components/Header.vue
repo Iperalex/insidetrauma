@@ -8,7 +8,7 @@
           </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-sm-5 py-lg-0">
@@ -147,6 +147,11 @@
       margin-left: auto;
     }
 
+    .navbar-toggler{
+      color: transparent;
+    }
+
+
     .navbar-button{
       align-items: center;
       height: 120px;
@@ -167,7 +172,32 @@
       margin-bottom: 52px;
     }
   /* /hamburger */
-  
+    .navbar-toggler-icon{
+      background-image: none;
+      height: 100%;
+      width: 100%;
+    }
+
+    .fa-bars{
+      font-size: 50px;
+      transition: 0.2s ease  all; 
+      color: white;
+    }
+
+    .navbar-toggler {
+      height: 65px;
+      width: 93px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .fa-bars:hover {
+      color: #9a9e9e;
+      
+    }
+    
 
 
   /* navbar, contiene links, mobile */
@@ -242,7 +272,7 @@
         height: 100%;
       }
       .navbar-expand-lg .navbar-nav[data-v-61dd7a3d] {
-        width: 60%;
+        width: 50%;
         display: flex;
         justify-content: space-around;
       }
