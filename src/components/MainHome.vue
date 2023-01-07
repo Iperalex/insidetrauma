@@ -18,21 +18,49 @@
     <!--carousel-->
 
       <!-- main photo -->
-      <div  class="ms_itemsContainer col-12">
-        <div v-for="(element, index) in items" class="ms_mainPhoto col-12 item" :class="isPresent(index)">
-            <img :src="element.photo">
-            <div v-for="(element, index) in items" class="text justify-conetid-end item" :class="isPresent(index)" >
-                <h1 class="title text-white d-flex justify-content-end me-3 " >{{element.title}}</h1>
-                <p  class="text text-white d-flex flex-row-reverse item">{{element.text}}</p>
-            </div>         
-        </div>
-        <div class="prev">
-            <i @click="back" class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="next">
-            <i @click="next" class="fa-solid fa-chevron-right"></i>
-        </div>
-      </div>
+
+      <div class="container_carousel">
+            <div class="row justify-content-center ">
+                <div @mouseleave= "hoverOut" class="ms_container-photos col-12 d-flex" 
+                
+                @mouseover= "hoverIn"
+                 >
+                    <!-- main photo -->
+                    <div  class="ms_itemsContainer col-12">
+                        <div v-for="(element, index) in items" class="ms_mainPhoto col-12 item" :class="isPresent(index)">
+                            <img :src="element.photo">
+                            <div v-for="(element, index) in items" class="text textCon justify-conetid-end item" :class="isPresent(index)" >
+                                <h1 class="title text-white d-flex justify-content-end me-3 " >{{element.title}}</h1>
+                                <p  class="text text-white d-flex flex-row-reverse item">{{element.text}}</p>
+                            </div>
+                            <div class="prev" @click="back">
+                              <i class="fa-solid fa-chevron-left"></i>
+                                
+                            </div>
+                            <div class="next" @click="next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>         
+                        </div>
+                        <div class="ms_sidePhotos col-2 d-flex">
+                            <div v-for="(element, index) in items" class="ms_imgContainer " >
+                              <div @click="chosePhoto(index)" :class="sidePresent(index)" class="circleCon">
+                                <i class="fa-solid fa-circle circle"></i>
+                
+                              </div>
+                            </div> 
+                           
+        
+                            
+                        </div>
+                    </div>
+                       
+                    <!-- side photos -->
+                    
+                    
+                    
+                </div>
+              </div>
+            </div>
                        
 
     <!--/carousel-->
@@ -61,17 +89,20 @@
             {
                 photo: 'https://www.psicosocial.it/wp-content/uploads/2020/10/immagine-fissa-si-muove.jpg',
                 title:'Svezia',
+                circle:"../assets/circle.png",
                 text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',   
                 
             },
             {
                 photo: 'https://www.rainews.it/resizegd/768x-/dl/img/2022/05/29/1653823152586_abrainridingarocketship.jpg',
                 title: 'Svizzera',
+                circle:"../assets/circle.png",
                 text: 'Lorem ipsum',
             }, 
             {
                 photo: 'https://www.psicosocial.it/wp-content/uploads/2020/10/immagine-fissa-si-muove.jpg',
                 title:  'Gran Bretagna',
+                circle:"../assets/circle.png",
                 text:  'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', 
             },
             
@@ -81,6 +112,7 @@
     },
 
     methods:{
+      
         isPresent: function( indexPhoto){
             if(indexPhoto == this.present){
                 return "active";
@@ -139,7 +171,7 @@
 
 <style scoped>
   *{
-    color:white
+    color:white;
   }
 
   /* Jumbotron */
@@ -165,6 +197,14 @@
   /* /Jumbotron */
 
   /* carousel */
+
+  .title{
+    background-color: transparent;
+  }
+
+  .container_carousel{
+    width: 100%;
+  }
   .item{
     background-color: transparent;
   }
@@ -199,12 +239,12 @@
 
 
 
-.text{
+.textCon{
     position: absolute;
-    right:14px;
-    bottom:-176px;
+    right:60px;
+    bottom:-250px;
     width: 600px; 
-    height: 325px;   
+    height: 225px;   
 }
 
 .ms_itemsContainer{
@@ -234,11 +274,25 @@
 
 
 .ms_sidePhotos .ms_imgContainer{
-    height: calc( 100% / 5 );
+    height: calc( 100% / 3 );
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    
+    background-color: transparent;
+}
+
+.ms_imgContainer{
+  position: relative;
+}
+
+.circleCon, .circle{
+  background-color: transparent;
+}
+
+.ms_sidePhotos{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
 }
 
 .ms_imgContainer img{

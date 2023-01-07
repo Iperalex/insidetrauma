@@ -29,7 +29,6 @@ export default {
 
 <style>
  *{
-  background-color: #252525;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
