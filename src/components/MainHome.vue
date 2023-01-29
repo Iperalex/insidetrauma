@@ -1,13 +1,17 @@
 <template>
   <div>
     <!--jumbotron-->
-    <div class="jumbocontainer p-5 text-center rounded-3">
-      <div class="mask">
-        <div class="submask d-flex justify-content-center align-items-center h-100">
-          <div class="submask2 text-white">
-            <h1 class="testo mb-3">INSIDE TRAUMA</h1>
-            <h4 class="testo mb-3">...in trauma, we Care!!</h4>
-            <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="jumbocontainer p-5 text-center rounded-3">
+          <div class="mask">
+            <div class="submask d-flex justify-content-center align-items-center h-100">
+              <div class="submask2 text-white">
+                <h1 class="testo mb-3">INSIDE TRAUMA</h1>
+                <h4 class="testo mb-3">...in trauma, we Care!!</h4>
+                <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -16,56 +20,91 @@
     
 
     <!--carousel-->
-
-      <!-- main photo -->
-
-      <div class="container_carousel">
-            <div class="row justify-content-center ">
-                <div @mouseleave= "hoverOut" class="ms_container-photos col-12 d-flex" 
-                
-                @mouseover= "hoverIn"
-                 >
-                    <!-- main photo -->
-                    <div  class="ms_itemsContainer col-12">
-                        <div v-for="(element, index) in items" class="ms_mainPhoto col-12 item" :class="isPresent(index)">
-                            <img :src="element.photo">
-                            <div v-for="(element, index) in items" class="text textCon justify-conetid-end item" :class="isPresent(index)" >
-                                <h1 class="title text-white d-flex justify-content-end me-3 " >{{element.title}}</h1>
-                                <p  class="text text-white d-flex flex-row-reverse item">{{element.text}}</p>
-                            </div>
-                            <div class="prev" @click="back">
-                              <i class="fa-solid fa-chevron-left"></i>
-                                
-                            </div>
-                            <div class="next" @click="next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>         
+    <!-- main photo -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container_carousel">
+          <div class="row justify-content-center ">
+              <div @mouseleave= "hoverOut" class="ms_container-photos col-12 d-flex"          
+              @mouseover= "hoverIn">
+                <!-- main photo -->
+                <div  class="ms_itemsContainer col-12" >
+                    <div v-for="(element, index) in items" :key="index" class="ms_mainPhoto col-12 item" :class="isPresent(index)">
+                        <img :src="element.photo">
+                        <div v-for="(element, index) in items" :key="index" class="text textCon justify-conetid-end item" :class="isPresent(index)" >
+                            <h1 class="title text-white d-flex justify-content-end me-3 " >{{element.title}}</h1>
+                            <p  class="text text-white d-flex flex-row-reverse item">{{element.text}}</p>
                         </div>
-                        <div class="ms_sidePhotos col-2 d-flex">
-                            <div v-for="(element, index) in items" class="ms_imgContainer " >
-                              <div @click="chosePhoto(index)" :class="sidePresent(index)" class="circleCon">
-                                <i class="fa-solid fa-circle circle"></i>
-                
-                              </div>
-                            </div> 
-                           
-        
-                            
+                        <!-- buttons prev+next -->
+                        <div class="prev" @click="back">
+                          <i class="fa-solid fa-chevron-left"></i>
                         </div>
+                        <div class="next" @click="next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>         
                     </div>
-                       
-                    <!-- side photos -->
-                    
-                    
-                    
-                </div>
+                    <!-- click to choose a photo -->
+                    <div class="ms_sidePhotos col-2 d-flex">
+                        <div v-for="(element, index) in items" class="ms_imgContainer " >
+                          <div @click="chosePhoto(index)" :class="sidePresent(index)" class="circleCon">
+                            <i class="fa-solid fa-circle circle"></i>
+                          </div>
+                        </div> 
+                    </div>
+                </div>              
               </div>
-            </div>
-                       
+          </div>
+        </div>                  
+      </div>
+    </div>
+    
 
-    <!--/carousel-->
+    <!-- faculties -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="mx-4 col-12">
+          <div class="titles py-3">
+            <h1>faculties</h1>
+          </div>
+        </div>
+        <div class="d-flex cardFaculties" v-for="(element, index) in faculties" :key="index">
+          <div  class="col-8">
+            <div class="name">{{ element.name }}</div>
+            <div class="role">{{ element.role }}</div>
+            <div class="description">{{ element.description }}</div>
+          </div>
+          <div class="col-4 photoBackground">
+            <img :src="element.photo" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- formazione -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="mx-4 col-12">
+          <div class="titles py-3">
+            <h1>Corsi 2023</h1>
+          </div>
+        </div>
+        <div class="col-6 containerCardCourses">
+          <div class="d-flex  CardContainer flip-card" v-for="(element, index) in formazioni" :key="index">
+            <div class=" flip-card-inner" >
+              <div class="flip-card-front">
+                <h2 class="data">Data</h2>
+                <h3>{{ element.date }}</h3>
+                <div class="dateBorder"></div>
+              </div>
+              <div class="flip-card-back">
+                <p>{{ element.info }}</p>
+              </div>
   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </template>
@@ -107,6 +146,82 @@
             },
             
             
+        ],
+        faculties:[
+          {
+            name:"name1",
+            role:"role1",
+            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name2",
+            role:"role2",
+            photo:"https://w7.pngwing.com/pngs/314/994/png-transparent-person-confused-miscellaneous-tshirt-cartoon.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name3",
+            role:"role3",
+            photo:"https://www.pngitem.com/pimgs/m/160-1600311_free-png-download-happy-person-png-images-background.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name4",
+            role:"role4",
+            photo:"https://www.pngitem.com/pimgs/m/211-2110922_confused-person-png-transparent-png.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name5",
+            role:"role5",
+            photo:"https://www.seekpng.com/png/detail/803-8038944_happy-person-png-tecnologia-de-la-felicidad.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name6",
+            role:"role6",
+            photo:"https://www.pngfind.com/pngs/m/61-619937_happy-person-jumping-png-happy-woman-transparent-background.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name7",
+            role:"role7",
+            photo:"https://www.pngfind.com/pngs/m/61-619282_happy-person-png-transparent-png.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name8",
+            role:"role8",
+            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name9",
+            role:"role9",
+            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          },
+          {
+            name:"name10",
+            role:"role10",
+            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+          }
+        ],
+        formazioni:[
+          {
+            date:"10.03.2023",
+            info:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando" 
+          },
+          {
+            date:"10.03.2023",
+            info:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando" 
+          },
+          {
+            date:"10.03.2023",
+            info:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando" 
+          }
         ]
       }
     },
@@ -172,6 +287,7 @@
 <style scoped>
   *{
     color:white;
+    background-color: transparent;
   }
 
   /* Jumbotron */
@@ -254,18 +370,36 @@
 /* buttons */
 
 
+.prev,
+.next{
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  transform: translatex(-50% , -50%);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease;
+  cursor: pointer;
+}
 .prev{
-    position: absolute;
-    top: 50%;
     left: 20px;
-    transform: translatex(-50% , -50%);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .next{
-    position: absolute;
-    top: 50%;
     right: 20px;
-    transform: translatex(-50%, -50%);
+}
+
+.prev:hover,
+.next:hover{
+  scale: 1.2;
+
 }
 .fa-chevron-right,
 .fa-chevron-left{
@@ -302,11 +436,19 @@
     opacity: 0.5;
 }
 
+.circleCon:hover{
+  cursor: pointer;
+}
 
-
-.sidePoto.opacity{
+.circleCon.opacity{
     opacity: 1 ; 
-    border: 3px solid white;
+    border-radius:50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 3px #f5f2f18f;
 }
 
 
@@ -328,6 +470,137 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* faculties */
+.cardFaculties{
+  height: 300px;
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 5px;
+  padding: 10px 5px;
+}
+.name{
+  font-size: 24px;
+  font-weight: 900;
+  color: darkred;
+  text-transform: uppercase;
+}
+.role{
+  font-size: 20;
+  font-weight: 900;
+}
+.photoBackground{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 10px solid #ff00005c;
+}
+
+.photoBackground img{
+  width: 100%;
+  background-size: cover;
+}
+
+
+
+/* formazione+ faculties*/
+.titles{
+  border-bottom: 5px solid darkred;
+  width: 250px;
+}
+
+.title h1{
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+/* formazione */
+.containerCardCourses{
+  margin: auto;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flip-card-inner{
+  border: 13px solid darkred;
+  background-color: darkred;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.flip-card{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: darkred;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.603);
+  transform: rotateY(180deg);
+}
+
+.data{
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.808);
+  font-weight: 900;
+}
+.dateBorder{
+  position: absolute;
+  left: 50%;
+  bottom: 77px;
+  transform: translatex(-50%);
+  width: 50px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.808) ;
+}
+
 
 
 
