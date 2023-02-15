@@ -30,7 +30,7 @@
                 <!-- main photo -->
                 <div  class="ms_itemsContainer col-12" >
                     <div v-for="(element, index) in items" :key="index" class="ms_mainPhoto col-12 item" :class="isPresent(index)">
-                        <img :src="element.photo">
+                        <img :src="require('../assets/'+element.photo+'.png') ">
                         <div v-for="(element, index) in items" :key="index" class="text textCon justify-conetid-end item" :class="isPresent(index)" >
                             <h1 class="title text-white d-flex justify-content-end me-3 " >{{element.title}}</h1>
                             <p  class="text text-white d-flex flex-row-reverse item">{{element.text}}</p>
@@ -135,26 +135,26 @@
         items:[
 
             {
-                photo: '../assets/carousel1L.png',
+                photo: 'carousel1L',
                 title:'Lezioni Frontali',
                 circle:"../assets/circle.png",
                 text: 'Stay updated...',   
                 
             },
             {
-                photo: '../assets/carousel 2L.png',
+                photo: 'carousel2L',
                 title: 'Simulazioni',
                 circle:"../assets/circle.png",
                 text: '...Test yourself...',
             }, 
             {
-                photo: '../assets/carousel 4L.png',
+                photo: 'carousel4L',
                 title:  'Scenari complessi',
                 circle:"../assets/circle.png",
                 text:  '...Trust your team...', 
             },
             {
-                photo: '../assets/carousel 3L.png',
+                photo: 'carousel3L',
                 title:  '...e tanto altro!',
                 circle:"../assets/circle.png",
                 text:  '...never stop fighting!', 
@@ -352,10 +352,6 @@
     background-color: transparent;
   }
     
-  .container{
-    height: 427px;
-    width: 1200px;  
-  }
 
   .row{
       height: 100%;
@@ -371,7 +367,9 @@
       position: relative;
   }
 
-  .ms_mainPhoto,
+  .ms_mainPhoto{
+    height: 540PX;
+  }
   .ms_mainPhoto img{
       height: 100%;
       width: 100%;
@@ -474,7 +472,6 @@
 
   .item {
       display: none;
-      height: 427px;
       overflow: hidden;
   }
 
@@ -515,6 +512,7 @@
   .titles h1{
     text-transform: capitalize;
     font-weight: 900;
+    font-size: 40px;
   }
 }
 /* /titoli */
