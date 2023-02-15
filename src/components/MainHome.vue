@@ -99,7 +99,6 @@
               <div class="flip-card-back">
                 <p>{{ element.info }}</p>
               </div>
-  
             </div>
           </div>
         </div>
@@ -126,50 +125,56 @@
         items:[
 
             {
-                photo: 'https://www.psicosocial.it/wp-content/uploads/2020/10/immagine-fissa-si-muove.jpg',
-                title:'Svezia',
+                photo: "../assets/carousel1L.png",
+                title:'Lezioni Frontali',
                 circle:"../assets/circle.png",
-                text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',   
+                text: 'Stay updated...',   
                 
             },
             {
-                photo: 'https://www.rainews.it/resizegd/768x-/dl/img/2022/05/29/1653823152586_abrainridingarocketship.jpg',
-                title: 'Svizzera',
+                photo: '../assets/carousel 2L.png',
+                title: 'Simulazioni',
                 circle:"../assets/circle.png",
-                text: 'Lorem ipsum',
+                text: '...Test yourself...',
             }, 
             {
-                photo: 'https://www.psicosocial.it/wp-content/uploads/2020/10/immagine-fissa-si-muove.jpg',
-                title:  'Gran Bretagna',
+                photo: '../assets/carousel 4L.png',
+                title:  'Scenari complessi',
                 circle:"../assets/circle.png",
-                text:  'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', 
+                text:  '...Trust your team...', 
+            },
+            {
+                photo: '../assets/carousel 3L.png',
+                title:  '...e molto di più!',
+                circle:"../assets/circle.png",
+                text:  '...never stop fighting!', 
             },
             
             
         ],
         faculties:[
           {
-            name:"name1",
+            name:"Erika Borotto",
             role:"role1",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1681948800&v=beta&t=bcnqYqkDGt4Mo_1SY8N6jUmEHdmUA3J6DQvG8SRaHB0",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
           },
           {
-            name:"name2",
+            name:"Murad Odeh",
             role:"role2",
-            photo:"https://w7.pngwing.com/pngs/314/994/png-transparent-person-confused-miscellaneous-tshirt-cartoon.png",
+            photo:"https://media.licdn.com/dms/image/C4D03AQHSnyQCezgPQg/profile-displayphoto-shrink_800_800/0/1651329152605?e=1681948800&v=beta&t=ammwSogQrOE2XZGojqPG291H32CuF6IHz9mDVxVhQvU",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
           },
           {
-            name:"name3",
+            name:"Fabrizio Sammartano",
             role:"role3",
-            photo:"https://www.pngitem.com/pimgs/m/160-1600311_free-png-download-happy-person-png-images-background.png",
+            photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
           },
           {
-            name:"name4",
+            name:"Benedetta Franchi",
             role:"role4",
-            photo:"https://www.pngitem.com/pimgs/m/211-2110922_confused-person-png-transparent-png.png",
+            photo:"https://media.licdn.com/dms/image/C4E03AQGJHlHa8uKV3A/profile-displayphoto-shrink_800_800/0/1654029029411?e=1681948800&v=beta&t=mrIa66rEMlmPlYNq6ps6a-B4pmLiBdpyR7s8mBNGeFg",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
           },
           {
@@ -319,6 +324,7 @@
   }
 
   .container_carousel{
+    padding-top: 25px;
     width: 100%;
   }
   .item{
@@ -327,6 +333,7 @@
   
   
   /* /carousel */
+
   .container{
     height: 427px;
     width: 1200px;
@@ -512,10 +519,10 @@
 /* formazione+ faculties*/
 .titles{
   border-bottom: 5px solid darkred;
-  width: 250px;
+  width: 241px;
 }
 
-.title h1{
+.titles h1{
   text-transform: capitalize;
   font-weight: 900;
 }
