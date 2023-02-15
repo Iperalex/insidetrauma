@@ -8,7 +8,7 @@
             <div class="submask d-flex justify-content-center align-items-center h-100">
               <div class="submask2 text-white">
                 <h1 class="testo mb-3">INSIDE TRAUMA</h1>
-                <h4 class="testo mb-3">...in trauma, we Care!!</h4>
+                <h4 class="testo mb-3">...in trauma, we CARE!</h4>
                 <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
               </div>
             </div>
@@ -19,7 +19,7 @@
     <!--/jumbotron-->
     
 
-    <!--carousel-->
+  <!--carousel-->
     <!-- main photo -->
     <div class="container-fluid">
       <div class="row">
@@ -92,12 +92,20 @@
           <div class="d-flex  CardContainer flip-card" v-for="(element, index) in formazioni" :key="index">
             <div class=" flip-card-inner" >
               <div class="flip-card-front">
-                <h2 class="data">Data</h2>
-                <h3>{{ element.date }}</h3>
-                <div class="dateBorder"></div>
+                <h2 class="numedition">{{ element.title }}</h2>
+                <h3 class="datedition">{{ element.date }}</h3>
+                <div class="scopricontainer">
+                  <h4 class="scopri">Scopri di più</h4>
+                </div>
               </div>
               <div class="flip-card-back">
-                <p>{{ element.info }}</p>
+                <h1 class="info1">{{ element.info1 }}</h1>
+                <h2 class="info2">{{ element.info2 }}</h2>
+                <h3 class="info3">{{ element.info3 }}</h3>
+                <h4 class="info4">{{ element.info4 }}</h4>
+                <div class="info5container">
+                  <h5 class="info5">Programma dettagliato</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -125,7 +133,7 @@
         items:[
 
             {
-                photo: "../assets/carousel1L.png",
+                photo: '../assets/carousel1L.png',
                 title:'Lezioni Frontali',
                 circle:"../assets/circle.png",
                 text: 'Stay updated...',   
@@ -145,7 +153,7 @@
             },
             {
                 photo: '../assets/carousel 3L.png',
-                title:  '...e molto di più!',
+                title:  '...e tanto altro!',
                 circle:"../assets/circle.png",
                 text:  '...never stop fighting!', 
             },
@@ -214,19 +222,21 @@
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
           }
         ],
+
         formazioni:[
           {
-            date:"10.03.2023",
-            info:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando" 
+            title:"1^ Edizione 2023",
+            date:"15-16-17 Febbraio",
+            info1:"Corso Concluso" 
           },
           {
-            date:"10.03.2023",
-            info:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando" 
+            title:"2^ Edizione 2023",
+            date:"22-23-24 Marzo",
+            info1:"Gestione avanzata del trauma maggiore",
+            info2:"Lezioni frontali",
+            info3:"Stazioni di esercitazioni pratiche per procedure di emergenza",
+            info4:"Simulazioni di scenari critici intra ed extra ospedalieri a complessità crescente"
           },
-          {
-            date:"10.03.2023",
-            info:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando" 
-          }
         ]
       }
     },
@@ -295,8 +305,8 @@
     background-color: transparent;
   }
 
-  /* Jumbotron */
-  .jumbocontainer{
+/* Jumbotron */
+ .jumbocontainer{
     background-image: url(../assets/jumbotron.png);
     background-size: cover;
     background-position: center;
@@ -315,29 +325,27 @@
   .testo{
     background-color: transparent;
   }
-  /* /Jumbotron */
+/* /Jumbotron */
 
-  /* carousel */
 
-  .title{
-    background-color: transparent;
-  }
+/* carousel */
 
-  .container_carousel{
-    padding-top: 25px;
-    width: 100%;
-  }
-  .item{
-    background-color: transparent;
-  }
+.title{
+  background-color: transparent;
+}
+
+.container_carousel{
+  padding-top: 25px;
+  width: 100%;
+}
+
+.item{
+  background-color: transparent;
+}
   
-  
-  /* /carousel */
-
-  .container{
-    height: 427px;
-    width: 1200px;
-  
+.container{
+  height: 427px;
+  width: 1200px;  
 }
 
 .row{
@@ -360,8 +368,6 @@
     width: 100%;
 }
 
-
-
 .textCon{
     position: absolute;
     right:60px;
@@ -374,8 +380,7 @@
     position: relative;  
 }
 
-/* buttons */
-
+ /* buttons */
 
 .prev,
 .next{
@@ -385,7 +390,7 @@
   width: 50px;
   transform: translatex(-50% , -50%);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(213, 17, 46, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,10 +398,11 @@
   transition: all .2s ease;
   cursor: pointer;
 }
+
 .prev{
-    left: 20px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+  left: 20px;
+  border-radius: 50%;
+  background-color:rgba(213, 17, 46, 0.6);
 }
 
 .next{
@@ -405,14 +411,13 @@
 
 .prev:hover,
 .next:hover{
-  scale: 1.2;
+  scale: 1.1;
 
 }
 .fa-chevron-right,
 .fa-chevron-left{
   font-size: 40px;
 }
-
 
 .ms_sidePhotos .ms_imgContainer{
     height: calc( 100% / 3 );
@@ -455,11 +460,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 0 3px #f5f2f18f;
+    box-shadow: 0 0 0 2px #d5112e;
 }
-
-
-
 
 .item {
     display: none;
@@ -471,142 +473,210 @@
     display: block;
 }
 
-
 .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* faculties */
-.cardFaculties{
-  height: 300px;
-  width: 48%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px 5px;
-  padding: 10px 5px;
-}
-.name{
-  font-size: 24px;
-  font-weight: 900;
-  color: darkred;
-  text-transform: uppercase;
-}
-.role{
-  font-size: 20;
-  font-weight: 900;
-}
-.photoBackground{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border: 10px solid #ff00005c;
-}
-
-.photoBackground img{
-  width: 100%;
-  background-size: cover;
-}
+/* /carousel */
 
 
-
-/* formazione+ faculties*/
+/* Titoli */
 .titles{
-  border-bottom: 5px solid darkred;
-  width: 241px;
+  margin-top: 40px;
+  border-bottom: 5px solid #D5112E;
+  width: 250px;
 }
 
 .titles h1{
   text-transform: capitalize;
   font-weight: 900;
 }
+/* /titoli */
+
+
+/* faculties */
+  .cardFaculties{
+    height: 300px;
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 10px 25px;
+  }
+
+  .name{
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .role{
+    font-size: 20;
+    font-weight: 900;
+    padding-left: 5px;
+  }
+
+  .description {
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .photoBackground{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid #D5112E;
+  }
+
+  .photoBackground img{
+    width: 100%;
+    background-size: cover;
+  }
+/* /Faculties */
+
 
 /* formazione */
-.containerCardCourses{
-  margin: auto;
-  height: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .containerCardCourses{
+    margin: auto;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.flip-card-inner{
-  border: 13px solid darkred;
-  background-color: darkred;
-  border-radius: 5px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 100%;
-}
+  .flip-card-inner{
+    background-color: #d5112e;
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  }
 
-.flip-card{
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  height: 300px;
-}
+  .flip-card{
+    height: 100%;
+    width: 300px;
+    height: 350px;
+    margin: 2%;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
+  .flip-card-back {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+  }
+
+    /* testo frontale della card */
+  .numedition{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  .datedition{
+    margin-top: 15px;
+    color: rgb(206, 202, 202);
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .scopricontainer{
+    height: 30px;
+    background-color: rgba(37, 37, 37, 0.3);
+    margin: 0 13%;
+    border-radius: 10px;
+  }
+
+  .scopri{
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  /* /testo frontale della card */
 
 
-.flip-card-inner {
-  position: relative;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+  /* testo retro della card */
+  .info1{
+    font-size:20px;
+    font-weight:700;
+    margin: 0 5px;
+  }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+  .info2{
+    font-size: 15px;
+    font-weight:600;
+    color: rgb(206, 202, 202);
+    margin: 0 5px;
+  }
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+  .info3{
+    font-size:15px ;
+    font-weight:600 ;
+    color: rgb(206, 202, 202);
+    margin: 0 5px;    
+  }
 
-.flip-card-front {
-  background-color: darkred;
-  color: black;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .info4{
+    font-size:15px ;
+    font-weight:600 ;
+    color: rgb(206, 202, 202);
+    margin: 0 5px;
+  }
 
-.flip-card-back {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.603);
-  transform: rotateY(180deg);
-}
+  .info5container{
+    height: 50px;
+    background-color: rgba(37, 37, 37, 0.3);
+    margin: 0 10%;
+    border-radius: 10px;
+  }
 
-.data{
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.808);
-  font-weight: 900;
-}
-.dateBorder{
-  position: absolute;
-  left: 50%;
-  bottom: 77px;
-  transform: translatex(-50%);
-  width: 50px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.808) ;
-}
+  .info5{
+    
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+
+
+  /* /testo retro della card */
+
+/* /Formazione */
 
 
 

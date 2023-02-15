@@ -79,6 +79,7 @@ export default {
 
 .fa-location-dot{
   font-size: 60px;
+  color: #BF3531;
   margin-right: 20px;
   transition: all 0.3s ease;
 }
