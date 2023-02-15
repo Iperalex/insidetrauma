@@ -333,173 +333,239 @@
 
 
 /* carousel */
-
-.title{
-  background-color: transparent;
-}
-
 .container_carousel{
-  padding-top: 25px;
-  width: 100%;
+  display: none;
 }
 
-.item{
-  background-color: transparent;
-}
-  
-.container{
-  height: 427px;
-  width: 1200px;  
-}
-
-.row{
-    height: 100%;
-}
-
-.ms_container-photos{
-    height: 100%;
-    
-}
-
-.ms_itemsContainer{
-    height: 100%;
-    position: relative;
-}
-
-.ms_mainPhoto,
-.ms_mainPhoto img{
-    height: 100%;
-    width: 100%;
-}
-
-.textCon{
-    position: absolute;
-    right:60px;
-    bottom:-250px;
-    width: 600px; 
-    height: 225px;   
-}
-
-.ms_itemsContainer{
-    position: relative;  
-}
-
- /* buttons */
-
-.prev,
-.next{
-  position: absolute;
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  transform: translatex(-50% , -50%);
-  border-radius: 50%;
-  background-color: rgba(213, 17, 46, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  transition: all .2s ease;
-  cursor: pointer;
-}
-
-.prev{
-  left: 20px;
-  border-radius: 50%;
-  background-color:rgba(213, 17, 46, 0.6);
-}
-
-.next{
-    right: 20px;
-}
-
-.prev:hover,
-.next:hover{
-  scale: 1.1;
-
-}
-.fa-chevron-right,
-.fa-chevron-left{
-  font-size: 40px;
-}
-
-.ms_sidePhotos .ms_imgContainer{
-    height: calc( 100% / 3 );
-    width: 100%;
+@media only screen and (min-width: 992px){
+  .title{
     background-color: transparent;
-}
+  }
 
-.ms_imgContainer{
-  position: relative;
-}
-
-.circleCon, .circle{
-  background-color: transparent;
-}
-
-.ms_sidePhotos{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-}
-
-.ms_imgContainer img{
-    height: 100%;
+  .container_carousel{
+    display: block;
+    padding-top: 25px;
     width: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
+  }
 
-.circleCon:hover{
-  cursor: pointer;
-}
+  .item{
+    background-color: transparent;
+  }
+    
+  .container{
+    height: 427px;
+    width: 1200px;  
+  }
 
-.circleCon.opacity{
-    opacity: 1 ; 
-    border-radius:50%;
-    height: 20px;
-    width: 20px;
+  .row{
+      height: 100%;
+  }
+
+  .ms_container-photos{
+      height: 100%;
+      
+  }
+
+  .ms_itemsContainer{
+      height: 100%;
+      position: relative;
+  }
+
+  .ms_mainPhoto,
+  .ms_mainPhoto img{
+      height: 100%;
+      width: 100%;
+  }
+
+  .textCon{
+      position: absolute;
+      right:60px;
+      bottom:-250px;
+      width: 600px; 
+      height: 225px;   
+  }
+
+  .ms_itemsContainer{
+      position: relative;  
+  }
+
+  /* buttons */
+
+  .prev,
+  .next{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translatex(-50% , -50%);
+    border-radius: 50%;
+    background-color: rgba(213, 17, 46, 0.6);
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 0 2px #d5112e;
-}
+    transition: all .2s ease;
+    cursor: pointer;
+  }
 
-.item {
-    display: none;
-    height: 427px;
-    overflow: hidden;
-}
+  .prev{
+    left: 20px;
+    border-radius: 50%;
+    background-color:rgba(213, 17, 46, 0.6);
+  }
 
-.active{
-    display: block;
-}
+  .next{
+      right: 20px;
+  }
 
-.item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .prev:hover,
+  .next:hover{
+    scale: 1.1;
+
+  }
+  .fa-chevron-right,
+  .fa-chevron-left{
+    font-size: 40px;
+  }
+
+  .ms_sidePhotos .ms_imgContainer{
+      height: calc( 100% / 3 );
+      width: 100%;
+      background-color: transparent;
+  }
+
+  .ms_imgContainer{
+    position: relative;
+  }
+
+  .circleCon, .circle{
+    background-color: transparent;
+  }
+
+  .ms_sidePhotos{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+
+  .ms_imgContainer img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+  }
+
+  .circleCon:hover{
+    cursor: pointer;
+  }
+
+  .circleCon.opacity{
+      opacity: 1 ; 
+      border-radius:50%;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 0 2px #d5112e;
+  }
+
+  .item {
+      display: none;
+      height: 427px;
+      overflow: hidden;
+  }
+
+  .active{
+      display: block;
+  }
+
+  .item img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
 }
 /* /carousel */
 
 
 /* Titoli */
 .titles{
-  margin-top: 40px;
-  border-bottom: 5px solid #D5112E;
-  width: 250px;
-}
+    
+    margin-top: 80px;
+    border-bottom: 15px solid #D5112E;
+    width: 650px;
+  }
 
-.titles h1{
-  text-transform: capitalize;
-  font-weight: 900;
+  .titles h1{
+    text-transform: capitalize;
+    font-size: 70px;
+    font-weight: 900;
+  }
+
+@media only screen and (min-width: 992px){
+  .titles{
+    margin-top: 40px;
+    border-bottom: 5px solid #D5112E;
+    width: 250px;
+  }
+
+  .titles h1{
+    text-transform: capitalize;
+    font-weight: 900;
+  }
 }
 /* /titoli */
 
 
 /* faculties */
+.cardFaculties{
+    height: 300px;
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 10px 25px;
+  }
+
+  .name{
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .role{
+    font-size: 20;
+    font-weight: 900;
+    padding-left: 5px;
+  }
+
+  .description {
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .photoBackground{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid #D5112E;
+  }
+
+  .photoBackground img{
+    width: 100%;
+    background-size: cover;
+  }
+
+@media only screen and (min-width: 992px){
   .cardFaculties{
     height: 300px;
     width: 48%;
@@ -543,10 +609,13 @@
     width: 100%;
     background-size: cover;
   }
+}
 /* /Faculties */
 
 
 /* formazione */
+
+@media only screen and (min-width: 992px){
   .containerCardCourses{
     margin: auto;
     height: 600px;
@@ -557,7 +626,8 @@
   }
 
   .flip-card-inner{
-    background-color: #d5112e;
+    background: rgb(213,17,46);
+    background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
     border-radius: 15px;
     display: flex;
     cursor: pointer;
@@ -679,6 +749,7 @@
     text-transform: uppercase;
   }
   /* /testo retro della card */
+}
 
 /* /Formazione */
 

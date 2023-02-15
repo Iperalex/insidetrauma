@@ -139,7 +139,7 @@
     }
 
     .fa-bars{
-      font-size: 50px;
+      font-size: 72px;
       transition: 0.2s ease  all; 
       color: white;
     }
@@ -167,22 +167,22 @@
       flex-direction: column;
       position: absolute;
       right: 0;
-      width: 300px;
+      width: 400px;
       height: 100vh;
-      background-color: #d5112e;
+      background-color: rgba(213, 17, 46, 0.9);
     }
 
     .nav-item{
       height: 100%;
       display: flex;
       align-items: center;
-      background-color: #d5112e;
+      background-color: transparent;
     }
 
     .nav-item a{
       width: 100%;
       color: #f6f6f6;
-      background-color: #d5112ee1;
+      background-color: transparent;
       text-decoration:none;
     }
 
@@ -212,8 +212,9 @@
       height: 220px;
       width: 100%;
       list-style: none;
-      font-size: 42px;
+      font-size: 70px;
       padding: 0 20px;
+      margin: 100px 0px;
       transition: 0.2s all ease; 
     }
   /* /navbar, contiene links, mobile */
@@ -247,6 +248,7 @@
       .nav-item[data-v-61dd7a3d] {
         height: 100%;
         margin-bottom: 0;
+        margin: 0 0 0 0;
       }
 
       .nav-item[data-v-61dd7a3d][data-v-61dd7a3d]{
