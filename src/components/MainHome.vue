@@ -90,7 +90,7 @@
         </div>
         <div class="col-6 containerCardCourses">
           <div class="d-flex  CardContainer flip-card" v-for="(element, index) in formazioni" :key="index">
-            <div class=" flip-card-inner" >
+            <div class="flip-card-inner">
               <div class="flip-card-front">
                 <h2 class="numedition">{{ element.title }}</h2>
                 <h3 class="datedition">{{ element.date }}</h3>
@@ -104,7 +104,9 @@
                 <h3 class="info3">{{ element.info3 }}</h3>
                 <h4 class="info4">{{ element.info4 }}</h4>
                 <div class="info5container">
-                  <h5 class="info5">Programma dettagliato</h5>
+                  <a style="text-decoration:none" href="./#/formazione/">
+                    <h5 class="info5">{{ element.info5 }}</h5>
+                  </a>
                 </div>
               </div>
             </div>
@@ -227,7 +229,8 @@
           {
             title:"1^ Edizione 2023",
             date:"15-16-17 Febbraio",
-            info1:"Corso Concluso" 
+            info1:"Corso Concluso",
+            info5:"Iscrizioni al corso chiuse"
           },
           {
             title:"2^ Edizione 2023",
@@ -235,7 +238,8 @@
             info1:"Gestione avanzata del trauma maggiore",
             info2:"Lezioni frontali",
             info3:"Stazioni di esercitazioni pratiche per procedure di emergenza",
-            info4:"Simulazioni di scenari critici intra ed extra ospedalieri a complessità crescente"
+            info4:"Simulazioni di scenari critici intra ed extra ospedalieri a complessità crescente",
+            info5:"programma e iscrizione"
           },
         ]
       }
@@ -627,7 +631,6 @@
     font-weight: 900;
     text-transform: uppercase;
   }
-
   /* /testo frontale della card */
 
 
@@ -666,14 +669,15 @@
     border-radius: 10px;
   }
 
+  .info5container:hover{
+    scale: 1.05;
+    transition: 0.2s;
+  }
+
   .info5{
-    
     font-weight: 800;
     text-transform: uppercase;
   }
-
-
-
   /* /testo retro della card */
 
 /* /Formazione */
