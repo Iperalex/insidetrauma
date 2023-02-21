@@ -7,8 +7,8 @@
           <div class="mask">
             <div class="submask d-flex justify-content-center align-items-center h-100">
               <div class="submask2 text-white">
-                <h1 class="testo mb-3">INSIDE TRAUMA</h1>
-                <h4 class="testo mb-3">...in trauma, we CARE!</h4>
+                <h1 id=testo1 class="testo mb-3">INSIDE TRAUMA</h1>
+                <h4 id=testo2 class="testo mb-3">...in trauma, we CARE!</h4>
                 <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
               </div>
             </div>
@@ -309,7 +309,48 @@
     background-color: transparent;
   }
 
-/* Jumbotron */
+
+/* Jumbotron Mobile */
+.jumbocontainer{
+    background-image: url(../assets/jumbotron.png);
+    background-size:cover;
+    background-position: center;
+    height: 900px
+ }
+  .mask{
+    background-color: transparent;
+  }
+  .submask{
+    background-color: transparent;
+  }
+  .submask2{
+    background-color: transparent;
+  }
+
+  .testo{
+    background-color: transparent;    
+  }
+
+  #testo1{
+    font-size: 65px;
+    font-weight: 700;
+  }
+
+  #testo2{
+    font-size: 40px;
+    color: rgb(206, 202, 202);
+    font-weight: 500;
+  }
+
+  .btn{
+    font-size: 45px;
+    font-weight: 700;
+    background-color: white;
+    color: #252525;
+  }
+
+
+@media only screen and (min-width: 992px){
  .jumbocontainer{
     background-image: url(../assets/jumbotron.png);
     background-size: cover;
@@ -329,7 +370,27 @@
   .testo{
     background-color: transparent;
   }
+
+  #testo1{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #testo2{
+    font-size: 20px;
+    color: rgb(206, 202, 202);
+    font-weight: 500;
+  }
+
+  .btn{
+    font-size: 25px;
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+  }
+}
 /* /Jumbotron */
+
 
 
 /* carousel */
@@ -376,11 +437,20 @@
   }
 
   .textCon{
-      position: absolute;
-      right:60px;
-      bottom:-250px;
-      width: 600px; 
-      height: 225px;   
+    background-color: rgba(37, 37, 37, 0.5);
+    position: absolute;
+    border-radius: 15px;
+    right: 47px;
+    bottom: 55px;
+    height: 100px;  
+  }
+  .textCon h1{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .textCon p{
+    font-size: 25px;
+    color:rgb(206, 202, 202)
   }
 
   .ms_itemsContainer{
@@ -521,41 +591,37 @@
 /* faculties */
 .cardFaculties{
     height: 300px;
-    width: 48%;
-    display: flex;
-    justify-content: space-around;
+    width: 90%;
+    margin: 60px 0px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px 5px;
-    padding: 10px 25px;
   }
 
   .name{
-    font-size: 24px;
+    font-size: 45px;
     font-weight: 900;
     text-transform: uppercase;
   }
 
   .role{
-    font-size: 20;
-    font-weight: 900;
-    padding-left: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 15px;
   }
 
   .description {
+    font-size: 30px;
     text-align: justify;
     padding-left: 5px;
-    padding-right: 10px;
-  }
+ }
 
   .photoBackground{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
-    border: 5px solid #D5112E;
+    border: 10px solid #D5112E;
   }
 
   .photoBackground img{
@@ -575,26 +641,28 @@
   }
 
   .name{
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 900;
     text-transform: uppercase;
   }
 
   .role{
-    font-size: 20;
-    font-weight: 900;
-    padding-left: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
   }
 
   .description {
+    font-size: 15px;
     text-align: justify;
     padding-left: 5px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 
   .photoBackground{
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
+    margin-right: 5px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -611,16 +679,20 @@
 /* /Faculties */
 
 
-/* formazione */
+/* formazione Mobile */
 
-@media only screen and (min-width: 992px){
-  .containerCardCourses{
-    margin: auto;
-    height: 600px;
+.containerCardCourses{
+    margin: 40px 0px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+  }
+
+  .flip-card{
+    width: 600px;
+    height: 750px;
+    margin: 40px 0px;
   }
 
   .flip-card-inner{
@@ -628,20 +700,12 @@
     background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
     border-radius: 15px;
     display: flex;
-    cursor: pointer;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-  }
-
-  .flip-card{
-    height: 100%;
-    width: 300px;
-    height: 350px;
-    margin: 2%;
   }
 
   .flip-card:hover .flip-card-inner {
@@ -676,27 +740,150 @@
     /* testo frontale della card */
   .numedition{
     text-transform: uppercase;
-    color: white;
-    font-weight: 900;
-    font-size: 30px;
+    color: rgb(206, 202, 202);
+    font-weight: 600;
+    font-size: 40px;
   }
 
   .datedition{
-    margin-top: 15px;
+    margin-top: 0px;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+  }
+
+  .scopricontainer{
+    display: none;
+  }
+
+
+  /* /testo frontale della card */
+
+
+  /* testo retro della card */
+  .info1{
+    font-size:50px;
+    font-weight:700;
+  }
+
+  .info2{
+    font-size: 40px;
+    font-weight:400;
+    color: rgb(206, 202, 202);
+  }
+
+  .info3{
+    font-size:40px ;
+    font-weight:400 ;
+    color: rgb(206, 202, 202);    
+    margin: 0 5%;
+  }
+
+  .info4{
+    font-size:40px ;
+    font-weight:400 ;
+    color: rgb(206, 202, 202);
+    margin: 0 5%;
+  }
+
+  .info5container{
+    background-color: rgba(37, 37, 37, 0.3);
+    border-radius: 10px;
+    margin: 0 4%;
+  }
+
+  .info5{
+    font-size: 35px;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  /* /testo retro della card */
+
+
+@media only screen and (min-width: 992px){
+  .containerCardCourses{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-card{
+    height: 100%;
+    width: 300px;
+    height: 400px;
+    margin: 2%;
+  }
+
+  .flip-card-inner{
+    background: rgb(213,17,46);
+    background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .flip-card-back {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+  }
+
+    /* testo frontale della card */
+  .numedition{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  .datedition{
+    
     color: rgb(206, 202, 202);
     font-weight: 600;
     font-size: 25px;
   }
 
   .scopricontainer{
-    height: 30px;
+    display: block;
     background-color: rgba(37, 37, 37, 0.3);
     margin: 0 13%;
     border-radius: 10px;
   }
 
   .scopri{
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
   }
   /* /testo frontale della card */
@@ -743,7 +930,7 @@
   }
 
   .info5{
-    font-weight: 800;
+    font-size: 20px;
     text-transform: uppercase;
   }
   /* /testo retro della card */
