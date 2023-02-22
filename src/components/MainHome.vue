@@ -58,28 +58,6 @@
       </div>
     </div>
     
-
-    <!-- faculties -->
-    <div class="container-fluid my-3">
-      <div class="row">
-        <div class="mx-4 col-12">
-          <div class="titles py-3">
-            <h1>faculties</h1>
-          </div>
-        </div>
-        <div class="d-flex cardFaculties" v-for="(element, index) in faculties" :key="index">
-          <div  class="col-8">
-            <div class="name">{{ element.name }}</div>
-            <div class="role">{{ element.role }}</div>
-            <div class="description">{{ element.description }}</div>
-          </div>
-          <div class="col-4 photoBackground">
-            <img :src="element.photo" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- formazione -->
     <div class="container-fluid my-3">
       <div class="row">
@@ -114,6 +92,29 @@
         </div>
       </div>
     </div>
+
+    <!-- faculties -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="mx-4 col-12">
+          <div class="titles py-3">
+            <h1>faculties</h1>
+          </div>
+        </div>
+        <div class="d-flex cardFaculties" v-for="(element, index) in faculties" :key="index">
+          <div  class="col-8">
+            <div class="name">{{ element.name }}</div>
+            <div class="role">{{ element.role }}</div>
+            <div class="description">{{ element.description }}</div>
+          </div>
+          <div class="col-4 photoBackground">
+            <img :src="element.photo" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 
 </template>
@@ -162,6 +163,8 @@
             
             
         ],
+
+
         faculties:[
           {
             name:"Erika Borotto",
@@ -332,18 +335,18 @@
   }
 
   #testo1{
-    font-size: 65px;
+    font-size: 75px;
     font-weight: 700;
   }
 
   #testo2{
-    font-size: 40px;
+    font-size: 55px;
     color: rgb(206, 202, 202);
     font-weight: 500;
   }
 
   .btn{
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 700;
     background-color: white;
     color: #252525;
@@ -394,9 +397,166 @@
 
 
 /* carousel */
-.container_carousel{
-  display: none;
-}
+
+.title{
+    background-color: transparent;
+  }
+
+  .container_carousel{
+    display: block;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .item{
+    background-color: transparent;
+  }
+    
+
+  .row{
+      height: 100%;
+  }
+
+  .ms_container-photos{
+      height: 100%;
+      
+  }
+
+  .ms_itemsContainer{
+      height: 100%;
+      position: relative;
+  }
+
+  .ms_mainPhoto{
+    background-size: cover;
+  }
+
+  .textCon{
+    background-color: rgba(37, 37, 37, 0.5);
+    position: absolute;
+    border-radius: 15px;
+    right: 130px;
+    bottom: 90px;
+    height: 160px;  
+  }
+  .textCon h1{
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .textCon p{
+    font-size: 55px;
+    color:rgb(206, 202, 202)
+  }
+
+  .ms_itemsContainer{
+      position: relative;  
+  }
+
+  /* buttons */
+
+  .prev,
+  .next{
+    position: absolute;
+    top: 40%;
+    height: 100px;
+    width: 100px;
+    transform: translatex(-50% , -50%);
+    border-radius: 50%;
+    background-color: rgba(213, 17, 46, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+
+  .prev{
+    left: 20px;
+    border-radius: 50%;
+    background-color:rgba(213, 17, 46, 0.6);
+  }
+
+  .next{
+    right: 20px;
+    border-radius: 50%;
+    background-color:rgba(213, 17, 46, 0.6);
+  }
+
+  .prev:hover,
+  .next:hover{
+    scale: 1.1;
+
+  }
+  .fa-chevron-right,
+  .fa-chevron-left{
+    font-size: 60px;
+  }
+
+  .ms_sidePhotos .ms_imgContainer{
+      height: calc( 100% / 3 );
+      width: 100%;
+      background-color: transparent;
+  }
+
+  .ms_imgContainer{
+    position: relative;
+  }
+
+  .circleCon, .circle{
+    background-color: transparent;
+    font-size: 30px;
+    margin: 0px 15px;
+    
+
+  }
+
+  .ms_sidePhotos{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+
+  .ms_imgContainer img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+  }
+
+  .circleCon:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+  }
+
+  .circleCon.opacity{
+      opacity: 1 ; 
+      border-radius:50%;
+      height: 31px;
+      width: 31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 0 8px #d5112e;
+  }
+
+  .item {
+      display: none;
+      overflow: hidden;
+  }
+
+  .active{
+      display: block;
+  }
+
+  .item img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
 
 @media only screen and (min-width: 992px){
   .title{
@@ -508,6 +668,8 @@
 
   .circleCon, .circle{
     background-color: transparent;
+    font-size: 15px;
+    margin: 0px 0px;
   }
 
   .ms_sidePhotos{
@@ -532,12 +694,12 @@
   .circleCon.opacity{
       opacity: 1 ; 
       border-radius:50%;
-      height: 20px;
-      width: 20px;
+      height: 15px;
+      width: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 0 0 2px #d5112e;
+      box-shadow: 0 0 0 3px #d5112e;
   }
 
   .item {
@@ -588,99 +750,8 @@
 /* /titoli */
 
 
-/* faculties */
-.cardFaculties{
-    height: 300px;
-    width: 90%;
-    margin: 60px 0px;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .name{
-    font-size: 45px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  .role{
-    font-size: 35px;
-    font-weight: 700;
-    padding-left: 15px;
-  }
-
-  .description {
-    font-size: 30px;
-    text-align: justify;
-    padding-left: 5px;
- }
-
-  .photoBackground{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 10px solid #D5112E;
-  }
-
-  .photoBackground img{
-    width: 100%;
-    background-size: cover;
-  }
-
-@media only screen and (min-width: 992px){
-  .cardFaculties{
-    height: 300px;
-    width: 48%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 5px;
-    padding: 10px 25px;
-  }
-
-  .name{
-    font-size: 25px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  .role{
-    font-size: 20px;
-    font-weight: 700;
-    padding-left: 15px;
-  }
-
-  .description {
-    font-size: 15px;
-    text-align: justify;
-    padding-left: 5px;
-    padding-right: 20px;
-  }
-
-  .photoBackground{
-    height: 180px;
-    width: 180px;
-    margin-right: 5px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 5px solid #D5112E;
-  }
-
-  .photoBackground img{
-    width: 100%;
-    background-size: cover;
-  }
-}
-/* /Faculties */
-
 
 /* formazione Mobile */
-
 .containerCardCourses{
     margin: 40px 0px;
     width: 100%;
@@ -690,8 +761,8 @@
   }
 
   .flip-card{
-    width: 600px;
-    height: 750px;
+    width: 750px;
+    height: 1050px;
     margin: 40px 0px;
   }
 
@@ -740,16 +811,16 @@
     /* testo frontale della card */
   .numedition{
     text-transform: uppercase;
-    color: rgb(206, 202, 202);
+    color: white ;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 70px;
   }
 
   .datedition{
     margin-top: 0px;
-    color: white;
+    color: rgb(206, 202, 202);
     font-weight: 900;
-    font-size: 45px;
+    font-size: 55px;
   }
 
   .scopricontainer{
@@ -762,25 +833,25 @@
 
   /* testo retro della card */
   .info1{
-    font-size:50px;
+    font-size:70px;
     font-weight:700;
   }
 
   .info2{
-    font-size: 40px;
+    font-size: 55px;
     font-weight:400;
     color: rgb(206, 202, 202);
   }
 
   .info3{
-    font-size:40px ;
+    font-size:55px ;
     font-weight:400 ;
     color: rgb(206, 202, 202);    
     margin: 0 5%;
   }
 
   .info4{
-    font-size:40px ;
+    font-size:55px ;
     font-weight:400 ;
     color: rgb(206, 202, 202);
     margin: 0 5%;
@@ -793,8 +864,7 @@
   }
 
   .info5{
-    font-size: 35px;
-    
+    font-size: 55px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -937,6 +1007,97 @@
 }
 
 /* /Formazione */
+
+
+/* faculties */
+.cardFaculties{
+    height: 300px;
+    width: 90%;
+    margin: 60px 0px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name{
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .role{
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 15px;
+  }
+
+  .description {
+    font-size: 30px;
+    text-align: justify;
+    padding-left: 5px;
+ }
+
+  .photoBackground{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #D5112E;
+  }
+
+  .photoBackground img{
+    width: 100%;
+    background-size: cover;
+  }
+
+@media only screen and (min-width: 992px){
+  .cardFaculties{
+    height: 300px;
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 10px 25px;
+  }
+
+  .name{
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .role{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
+  }
+
+  .description {
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+
+  .photoBackground{
+    height: 180px;
+    width: 180px;
+    margin-right: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid #D5112E;
+  }
+
+  .photoBackground img{
+    width: 100%;
+    background-size: cover;
+  }
+}
+/* /Faculties */
 
 
 

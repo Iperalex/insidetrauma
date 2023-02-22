@@ -114,19 +114,26 @@ iframe{
 }
 
 #crilogo{
-  width: 26%;
-  margin: 60px 0px 40px 38%;
+  width: 62%;
+  margin: 60px 0px 30px 20%;
 }
 
 #unimilogo{
   width: 55%;
-  margin: 40px 0px 30px 25%;
+  margin: 40px 0px 35px 25%;
 }
 
 #uninsubrialogo {
   width: 80%;
   margin: 30px 0px 60px 13%;
 }
+
+#crilogo:hover,
+  #unimilogo:hover,
+  #uninsubrialogo:hover{
+    scale: 1.1;
+    transition: 0.2s;
+  }
 
 .copy {
   font-size: 25px;
@@ -186,8 +193,8 @@ iframe{
   }
 
   #crilogo{
-    width: 21%;
-    margin: 60px 0px 40px 13%;
+    width: 60%;
+    margin: 60px 0px 25px 13%;
   }
 
   #unimilogo{
@@ -198,6 +205,13 @@ iframe{
   #uninsubrialogo {
     width: 73%;
     margin: 30px 0px 60px 11%;
+  }
+
+  #crilogo:hover,
+  #unimilogo:hover,
+  #uninsubrialogo:hover{
+    scale: 1.1;
+    transition: 0.2s;
   }
 
   .copy {
