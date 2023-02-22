@@ -1011,8 +1011,8 @@
 
 /* faculties */
 .cardFaculties{
-    height: 300px;
-    width: 90%;
+    height: 850px;
+    width: 100%;
     margin: 60px 0px;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -1021,25 +1021,25 @@
 
   .name{
     font-size: 70px;
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
   }
 
   .role{
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 700;
     padding-left: 15px;
   }
 
   .description {
-    font-size: 30px;
+    font-size: 50px;
     text-align: justify;
     padding-left: 5px;
  }
 
   .photoBackground{
-    height: 250px;
-    width: 250px;
+    height: 310px;
+    width: 310px;
     border-radius: 50%;
     overflow: hidden;
     border: 10px solid #D5112E;
