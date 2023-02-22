@@ -62,7 +62,7 @@ export default {
 }
 
 .footercontainer {
-  font-size: 35px ;
+  font-size: 55px ;
   color: #BF3531;
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@ export default {
 }
 
 .fa-location-dot{
-  font-size: 60px;
+  font-size: 90px;
   color: #BF3531;
   margin-right: 20px;
   transition: all 0.3s ease;
@@ -85,7 +85,7 @@ export default {
 .fa-facebook,
 .fa-instagram,
 .fa-linkedin-in {
-  font-size: 100px; 
+  font-size: 160px; 
   margin: 100px 50px; 
   transition: all 0.3s ease;
 }
@@ -108,24 +108,25 @@ iframe{
 }
 
 .partnertitle{
-  font-size: 55px;
+  font-size: 75px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 5%;
 }
 
 #crilogo{
-  width: 62%;
-  margin: 60px 0px 30px 20%;
+  width: 80%;
+  margin: 60px 0px 30px 30px;
 }
 
 #unimilogo{
-  width: 55%;
-  margin: 40px 0px 35px 25%;
+  width: 75%;
+  margin: 40px 0px 35px 40px;
 }
 
 #uninsubrialogo {
-  width: 80%;
-  margin: 30px 0px 60px 13%;
+  width: 100%;
+  margin: 30px 0px 60px 0px;
 }
 
 #crilogo:hover,
@@ -136,7 +137,7 @@ iframe{
   }
 
 .copy {
-  font-size: 25px;
+  font-size: 35px;
   display: flex;
   justify-content: flex-end;
   margin-right: 5%;

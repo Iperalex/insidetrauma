@@ -406,7 +406,7 @@
     display: block;
     padding-top: 25px;
     width: 100%;
-  }
+ }
 
   .item{
     background-color: transparent;
@@ -429,6 +429,7 @@
 
   .ms_mainPhoto{
     background-size: cover;
+    border-radius: 10px;
   }
 
   .textCon{
@@ -506,9 +507,7 @@
   .circleCon, .circle{
     background-color: transparent;
     font-size: 30px;
-    margin: 0px 15px;
-    
-
+    margin: 0px 15px;  
   }
 
   .ms_sidePhotos{
@@ -590,6 +589,7 @@
 
   .ms_mainPhoto{
     height: 540PX;
+    border-radius: 10px;
   }
   .ms_mainPhoto img{
       height: 100%;
@@ -883,8 +883,8 @@
 
   .flip-card{
     height: 100%;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     margin: 2%;
   }
 
@@ -935,14 +935,14 @@
     text-transform: uppercase;
     color: white;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .datedition{
     
     color: rgb(206, 202, 202);
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .scopricontainer{
@@ -955,6 +955,7 @@
   .scopri{
     font-weight: 800;
     text-transform: uppercase;
+    font-size: 20px;
   }
   /* /testo frontale della card */
 
