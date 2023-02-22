@@ -436,17 +436,19 @@
     background-color: rgba(37, 37, 37, 0.5);
     position: absolute;
     border-radius: 15px;
-    right: 130px;
+    right: 150px;
     bottom: 90px;
     height: 160px;  
   }
   .textCon h1{
     font-size: 70px;
     font-weight: 600;
+    margin: 0px 30px;
   }
   .textCon p{
     font-size: 55px;
-    color:rgb(206, 202, 202)
+    color:rgb(206, 202, 202);
+    margin: 0px 30px;
   }
 
   .ms_itemsContainer{
@@ -607,10 +609,12 @@
   .textCon h1{
     font-size: 40px;
     font-weight: 600;
+    margin: 0px 30px;
   }
   .textCon p{
     font-size: 25px;
     color:rgb(206, 202, 202)
+
   }
 
   .ms_itemsContainer{
@@ -1035,7 +1039,7 @@
   .description {
     font-size: 50px;
     text-align: justify;
-    padding-left: 5px;
+    padding: 0px 20px;
  }
 
   .photoBackground{

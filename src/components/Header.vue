@@ -116,7 +116,7 @@
 
   /* logo*/
     #logoinside {
-      height: 60px;
+      height: 80px;
       margin-top: 4px;
     }
   /* /logo*/
@@ -168,7 +168,8 @@
       position: absolute;
       right: 0;
       width: 400px;
-      height: 100vh;
+      height: 1000px;
+      z-index: 1000;
       background-color: rgba(213, 17, 46, 0.9);
     }
 
