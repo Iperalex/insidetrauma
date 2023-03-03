@@ -115,6 +115,73 @@
     </div>
 
 
+    <!--rewiev-->
+    <div>
+      <div class="rev-section">
+        <div class="titles py-3">
+          <h1>Reviews</h1>
+        </div>
+
+        <div class="reviews">
+
+          <div class="review">
+           <div class="head-review">
+             <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+            </div>
+          <div class="body-review">
+            <div class="name-review"></div>
+            <div class="place-review">Germany</div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="head-review">
+              <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+          </div>
+        <div class="body-review">
+            <div class="name-review"></div>
+            <div class="place-review">Paris</div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+        </div>
+      </div>
+      <div class="review">
+        <div class="head-review">
+            <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+        </div>
+        <div class="body-review">
+            <div class="name-review"></div>
+            <div class="place-review">New York</div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+    </div>
+
+
   </div>
 
 </template>
@@ -1104,7 +1171,124 @@
 }
 /* /Faculties */
 
+/* Reviews */
 
+.rev-section{
+  margin: auto;
+  text-align: center;
+  }
 
+  .reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review{
+    margin: 0 1rem;
+    flex: 21;
+  }
+
+  .head-review{
+    margin: 2rem auto;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .user{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  }
+
+  .body-review{
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+  }
+
+  .name-review{
+    font-size: 70px;
+    color: white;
+    margin-bottom: .25rem;
+  }
+  .place-review{
+    font-size: 60px;
+    color: #d5112e;
+    font-style: italic;
+  }
+  .rating{
+    margin: 1rem 0;
+    font-size: 50px;
+  }
+
+  .desc-review{
+    font-size: 50px;
+    color: rgb(150, 150, 150);
+  }
+
+@media only screen and (min-width: 992px){
+  .rev-section{
+  margin: auto;
+  text-align: center;
+  }
+
+  .reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .review{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+  }
+
+  .head-review{
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .user{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  }
+
+  .body-review{
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+  }
+
+  .name-review{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: .25rem;
+  }
+  .place-review{
+    font-size: 30px;
+    color: #d5112e;
+    font-style: italic;
+  }
+  .rating{
+    margin: 1rem 0;
+    font-size: 20px
+  }
+
+  .desc-review{
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+  }
+}
+/* /reviews */
 
 </style>

@@ -116,7 +116,7 @@
 
   /* logo*/
     #logoinside {
-      height: 80px;
+      width: 50%;
       margin-top: 4px;
     }
   /* /logo*/
