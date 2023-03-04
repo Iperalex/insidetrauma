@@ -18,7 +18,7 @@
 
       <div class="footerdiv">
         <div class="loghidiv">
-          <h2 class="partnertitle">In collaborazione con</h2>
+          <h2 class="partnertitle">In collaborazione con:</h2>
           <a href="https://www.crivarese.it/varese/" target="_blank"> <img id="crilogo" src="../assets/cri logo.png" alt="cri logo"></a>
           <a href="https://www.unimi.it/" target="_blank"> <img id="unimilogo" src="../assets/unimi logo.png" alt="unimi logo"></a>
           <a href="https://www.uninsubria.it/" target="_blank"> <img id="uninsubrialogo" src="../assets/uninsubria logo.png" alt="uninsubria logo"></a>
@@ -112,6 +112,8 @@ iframe{
   display: flex;
   justify-content: left;
   margin-left: 5%;
+  text-decoration: underline 10px #BF3531;
+  text-underline-offset: 15px;
 }
 
 #crilogo{
@@ -191,6 +193,8 @@ iframe{
 
   .partnertitle{
     font-size: 25px;
+    text-decoration: underline 3px #BF3531;
+    text-underline-offset: 5px;
   }
 
   #crilogo{

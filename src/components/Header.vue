@@ -9,14 +9,15 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-sm-5 py-lg-0">
             <li class="nav-item dropdown me-3 py-2 position-static" v-for="(element, index) in links" :key="index">
               <a @click="linkMobile" :href=(element.url) :target=(element.target) :class='{active: element.current==true}'>{{element.text}}</a>
             </li>
           </ul> 
         </div>
-      </div>
     </nav> 
   </header>
 </template>
@@ -116,7 +117,7 @@
 
   /* logo*/
     #logoinside {
-      width: 50%;
+      width: 90%;
       margin-top: 4px;
     }
   /* /logo*/
@@ -159,7 +160,9 @@
     }
   /* /hamburger */
     
-
+  .navbar > .container-fluid{
+    flex-wrap: nowrap;
+  }
 
   /* navbar, contiene links, mobile */
     .navbar-nav {
@@ -227,6 +230,11 @@
         /*contiene header + tutta la navbar*/
         height: 75px;
       }
+
+      #logoinside {
+      width: 50%;
+      margin-top: 0px;
+    }
 
       .navbar-expand-lg .navbar-nav {
         height: 100%;

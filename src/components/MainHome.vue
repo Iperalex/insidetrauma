@@ -119,7 +119,7 @@
     <div>
       <div class="rev-section">
         <div class="titles py-3">
-          <h1>Reviews</h1>
+          <h1>Best reviews</h1>
         </div>
 
         <div class="reviews">
@@ -129,8 +129,8 @@
              <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
             </div>
           <div class="body-review">
-            <div class="name-review"></div>
-            <div class="place-review">Germany</div>
+            <div class="name-review">Febbraio 2023</div>
+            <div class="place-review">Anonimo</div>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -138,7 +138,11 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+            <div class="desc-review1" @click='hiddentxt1'>Vi dirò solo che la settimana successiva al corso, in automedica, mi sono trovato a dover posizionare un accesso intraosseo ed eseguire una minitoraco. Fino a 10 giorni fa non me lo sarei mai immaginato, e mi sono stupito ... 
+            <p class="hiddentxt1">positivamente del fatto che sapessi come muovermi, seppur con la giusta preoccupazione nel dover eseguire qualcosa di nuovo, invasivo e non propriamente usuale. Siete andati oltre le mie aspettative e, personalmente, mi avete dato tanto in termini di conoscenze, sicurezza nell’eseguire manovre che non avevo mai affrontato e voglia di continuare ad investire nelle mie competenze riguardanti il trauma.
+              Ottimo bilanciamento tra lezioni teoriche, pratiche e simulazioni, ogni contributo è stato allo stesso tempo formativo ed interessante.
+              Non posso fare altro che ringraziarvi!</p>
+            </div>
           </div>
         </div>
         <div class="review">
@@ -146,8 +150,8 @@
               <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
           </div>
         <div class="body-review">
-            <div class="name-review"></div>
-            <div class="place-review">Paris</div>
+            <div class="name-review">Dicembre 2022</div>
+            <div class="place-review">Anonimo</div>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -155,7 +159,9 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+            <div class="desc-review2" @click='hiddentxt2'>Corso molto formativo e stimolante, completo per gli argomenti trattati. Molto bello il coinvolgimento di diversi relatori. Utilissimo fornire... 
+            <p class="hiddentxt2">materiale e bibliografia pre-corso. Poco pubblicizzato</p>
+            </div>
         </div>
       </div>
       <div class="review">
@@ -163,8 +169,8 @@
             <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
         </div>
         <div class="body-review">
-            <div class="name-review"></div>
-            <div class="place-review">New York</div>
+            <div class="name-review">Novembre 2022</div>
+            <div class="place-review">Anonimo</div>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -172,7 +178,9 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+            <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
+            <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
+            </div>
         </div>
       </div>
     </div>
@@ -190,6 +198,7 @@
 
 
 <script>
+
   export default {
     name: 'mainhome',
     props: {
@@ -360,16 +369,82 @@
         hoverIn: function(){
             clearInterval(this.intvl);  
             this.intvl = null ;
+        },
+
+
+
+
+      //reviws card animazione espansione
+      hiddentxt1: function(){
+      // Seleziona la sezione di testo e il paragrafo nascosto
+      var testoEspandibile = document.querySelector('.desc-review1');
+      var testoNascosto = testoEspandibile.querySelector('.hiddentxt1');
+      
+        // // Se il testo nascosto è già visibile, nascondilo
+        if (testoNascosto.style.display === 'block') {
+        testoNascosto.style.display = 'none';
+        console.log('funziono1');
+        // Altrimenti, visualizzalo
+        } else {
+        testoNascosto.style.display = 'block';
+        console.log('funziono1');
         }
+        
+
+      },
+
+      hiddentxt2: function(){
+      // Seleziona la sezione di testo e il paragrafo nascosto
+      var testoEspandibile = document.querySelector('.desc-review2');
+      var testoNascosto = testoEspandibile.querySelector('.hiddentxt2');
+      
+        // // Se il testo nascosto è già visibile, nascondilo
+        if (testoNascosto.style.display === 'block') {
+        testoNascosto.style.display = 'none';
+        console.log('funziono');
+        // Altrimenti, visualizzalo
+        } else {
+        testoNascosto.style.display = 'block';
+        console.log('funziono');
+        }
+        
+
+      },
+
+      hiddentxt3: function(){
+      // Seleziona la sezione di testo e il paragrafo nascosto
+      var testoEspandibile = document.querySelector('.desc-review3');
+      var testoNascosto = testoEspandibile.querySelector('.hiddentxt3');
+      
+        // // Se il testo nascosto è già visibile, nascondilo
+        if (testoNascosto.style.display === 'block') {
+        testoNascosto.style.display = 'none';
+        console.log('funziono');
+        // Altrimenti, visualizzalo
+        } else {
+        testoNascosto.style.display = 'block';
+        console.log('funziono');
+        }
+        
+
+      },
 
     },
 
     mounted: function(){
 
         this.hoverOut();
-    }
+    },
 
-}  
+
+
+
+} 
+
+
+
+
+
   
 </script>
 
@@ -793,7 +868,6 @@
 
 /* Titoli */
 .titles{
-    
     margin-top: 80px;
     border-bottom: 15px solid #D5112E;
     width: 650px;
@@ -1225,8 +1299,35 @@
     font-size: 50px;
   }
 
-  .desc-review{
-    font-size: 50px;
+  .desc-review1{
+    font-size: 60px;
+    color: rgb(150, 150, 150);
+    text-align: justify;
+  }
+
+  .desc-review2{
+    font-size: 60px;
+    color: rgb(150, 150, 150);
+    text-align: justify;
+  }
+
+  .desc-review3{
+    font-size: 60px;
+    color: rgb(150, 150, 150);
+    text-align: justify;
+  }
+
+
+  .hiddentxt1{
+    display: none;
+    color: rgb(150, 150, 150);
+  }
+  .hiddentxt2{
+    display: none;
+    color: rgb(150, 150, 150);
+  }
+  .hiddentxt3{
+    display: none;
     color: rgb(150, 150, 150);
   }
 
@@ -1240,6 +1341,7 @@
     margin: 2rem auto;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .review{
@@ -1267,6 +1369,11 @@
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
   }
 
+  .review:hover{
+    scale:1.02;
+    transition: 0.2s;
+  }
+  
   .name-review{
     font-size: 1.5rem;
     color: white;
@@ -1282,12 +1389,31 @@
     font-size: 20px
   }
 
-  .desc-review{
+
+  .desc-review1{
     font-size: 20px;
     line-height: 1.5rem;
     letter-spacing: 1px;
     color: rgb(150, 150, 150);
+    cursor:pointer;
   }
+
+  .desc-review2{
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+    cursor:pointer;
+  }
+
+  .desc-review3{
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+    cursor:pointer;
+  }
+
 }
 /* /reviews */
 
