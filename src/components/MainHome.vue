@@ -19,7 +19,7 @@
     <!--/jumbotron-->
     
 
-  <!--carousel-->
+  <!--carousel--> ciao
     <!-- main photo -->
     <div class="container-fluid">
       <div class="row">
