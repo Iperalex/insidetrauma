@@ -93,6 +93,8 @@
       </div>
     </div>
 
+    <!-- /Formazione-->
+
     <!-- faculties -->
     <div class="container-fluid my-3">
       <div class="row">
@@ -115,81 +117,81 @@
     </div>
 
 
-    <!--rewiev-->
-    <div>
-      <div class="rev-section">
-        <div class="titles py-3">
-          <h1>Best reviews</h1>
-        </div>
-
-        <div class="reviews">
-
-          <div class="review">
-           <div class="head-review">
-             <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+    <!--review-->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="rev-section">
+          <div class="titles py-3">
+            <h1>Best reviews</h1>
+          </div>
+          <div class="reviews">
+            <div class="review">
+              <div class="head-review">
+                <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+              </div>
+              <div class="body-review">
+                <div class="name-review">Febbraio 2023</div>
+                <div class="place-review">Anonimo</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="desc-review1" @click='hiddentxt1'>Vi dirò solo che la settimana successiva al corso, in automedica, mi sono trovato a dover posizionare un accesso... 
+                  <p class="hiddentxt1"> intraosseo ed eseguire una minitoraco. Fino a 10 giorni fa non me lo sarei mai immaginato, e mi sono stupito positivamente del fatto che sapessi come muovermi, seppur con la giusta preoccupazione nel dover eseguire qualcosa di nuovo, invasivo e non propriamente usuale. Siete andati oltre le mie aspettative e, personalmente, mi avete dato tanto in termini di conoscenze, sicurezza nell’eseguire manovre che non avevo mai affrontato e voglia di continuare ad investire nelle mie competenze riguardanti il trauma.
+                  Ottimo bilanciamento tra lezioni teoriche, pratiche e simulazioni, ogni contributo è stato allo stesso tempo formativo ed interessante.
+                  Non posso fare altro che ringraziarvi!
+                  </p>
+                </div>
+              </div>
             </div>
-          <div class="body-review">
-            <div class="name-review">Febbraio 2023</div>
-            <div class="place-review">Anonimo</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+
+            <div class="review">
+              <div class="head-review">
+                <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+              </div>
+              <div class="body-review">
+                <div class="name-review">Dicembre 2022</div>
+                <div class="place-review">Anonimo</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="desc-review2" @click='hiddentxt2'>Corso molto formativo e stimolante, completo per gli argomenti trattati. Molto bello il coinvolgimento di diversi ... 
+                  <p class="hiddentxt2">relatori. Utilissimo fornire materiale e bibliografia pre-corso. Poco pubblicizzato</p>
+                </div>
+              </div>
             </div>
-            <div class="desc-review1" @click='hiddentxt1'>Vi dirò solo che la settimana successiva al corso, in automedica, mi sono trovato a dover posizionare un accesso intraosseo ed eseguire una minitoraco. Fino a 10 giorni fa non me lo sarei mai immaginato, e mi sono stupito ... 
-            <p class="hiddentxt1">positivamente del fatto che sapessi come muovermi, seppur con la giusta preoccupazione nel dover eseguire qualcosa di nuovo, invasivo e non propriamente usuale. Siete andati oltre le mie aspettative e, personalmente, mi avete dato tanto in termini di conoscenze, sicurezza nell’eseguire manovre che non avevo mai affrontato e voglia di continuare ad investire nelle mie competenze riguardanti il trauma.
-              Ottimo bilanciamento tra lezioni teoriche, pratiche e simulazioni, ogni contributo è stato allo stesso tempo formativo ed interessante.
-              Non posso fare altro che ringraziarvi!</p>
+
+            <div class="review">
+              <div class="head-review">
+                <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+              </div>
+              <div class="body-review">
+                <div class="name-review">Novembre 2022</div>
+                <div class="place-review">Anonimo</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
+                  <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="review">
-          <div class="head-review">
-              <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
-          </div>
-        <div class="body-review">
-            <div class="name-review">Dicembre 2022</div>
-            <div class="place-review">Anonimo</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="desc-review2" @click='hiddentxt2'>Corso molto formativo e stimolante, completo per gli argomenti trattati. Molto bello il coinvolgimento di diversi relatori. Utilissimo fornire... 
-            <p class="hiddentxt2">materiale e bibliografia pre-corso. Poco pubblicizzato</p>
-            </div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="head-review">
-            <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
-        </div>
-        <div class="body-review">
-            <div class="name-review">Novembre 2022</div>
-            <div class="place-review">Anonimo</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
-            <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
-            </div>
-        </div>
       </div>
     </div>
-
-</div>
-
-    </div>
-
-
+    <!--/review-->
   </div>
 
 </template>
