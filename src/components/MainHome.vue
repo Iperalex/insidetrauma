@@ -307,20 +307,30 @@
         ],
 
         formazioni:[
+
           {
-            title:"1^ Edizione 2023",
-            date:"15-16-17 Febbraio",
-            info1:"Corso Concluso",
-            info5:"Iscrizioni al corso chiuse"
+            title:"inside trauma care specializzandi",
+            date:"22-23-24 Marzo 2023",
+            info1:"Gestione avanzata del trauma maggiore",
+            info2:"Corso per Specializzandi",
+            info3:"",
+            info4:"Info e iscrizione: info@insidetrauma.it",
+            info5:"Programma del corso"
           },
           {
-            title:"2^ Edizione 2023",
-            date:"22-23-24 Marzo",
+            title:"inside trauma care specialisti",
+            date:"26-27-28 Settembre 2023",
             info1:"Gestione avanzata del trauma maggiore",
-            info2:"Lezioni frontali",
-            info3:"Stazioni di esercitazioni pratiche per procedure di emergenza",
-            info4:"Simulazioni di scenari critici intra ed extra ospedalieri a complessità crescente",
-            info5:"programma e iscrizione"
+            info2:"Corso per Specialisti",
+            info3:"",
+            info4:"Info e iscrizione: info@insidetrauma.it",
+            info5:"Programma del corso TBA"
+          },
+          {
+            title:"inside trauma care specializzandi",
+            date:"Feb 2023 - Corso Concluso",
+            info1:"Corso Concluso",
+            info5:"Iscrizioni chiuse"
           },
         ]
       }
@@ -485,7 +495,7 @@
 
   #testo2{
     font-size: 55px;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     font-weight: 500;
   }
 
@@ -525,7 +535,7 @@
 
   #testo2{
     font-size: 20px;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     font-weight: 500;
   }
 
@@ -914,8 +924,6 @@
   }
 
   .flip-card-inner{
-    background: rgb(213,17,46);
-    background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
     border-radius: 15px;
     display: flex;
     width: 100%;
@@ -923,7 +931,7 @@
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -955,9 +963,9 @@
     transform: rotateY(180deg);
   }
 
-    /* testo frontale della card */
+  /* testo frontale della card */
   .numedition{
-    text-transform: uppercase;
+    text-transform:capitalize;
     color: white ;
     font-weight: 600;
     font-size: 70px;
@@ -965,7 +973,7 @@
 
   .datedition{
     margin-top: 0px;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     font-weight: 900;
     font-size: 55px;
   }
@@ -974,40 +982,40 @@
     display: none;
   }
 
-
   /* /testo frontale della card */
 
 
   /* testo retro della card */
   .info1{
-    font-size:70px;
+    font-size:65px;
     font-weight:700;
   }
 
   .info2{
     font-size: 55px;
     font-weight:400;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
   }
 
   .info3{
     font-size:55px ;
     font-weight:400 ;
-    color: rgb(206, 202, 202);    
+    color: rgb(150, 150, 150);    
     margin: 0 5%;
   }
 
   .info4{
     font-size:55px ;
     font-weight:400 ;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5%;
   }
 
   .info5container{
-    background-color: rgba(37, 37, 37, 0.3);
     border-radius: 10px;
-    margin: 0 4%;
+    margin: 0 10%;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    
   }
 
   .info5{
@@ -1030,14 +1038,12 @@
 
   .flip-card{
     height: 100%;
-    width: 250px;
+    width: 300px;
     height: 350px;
     margin: 2%;
   }
 
   .flip-card-inner{
-    background: rgb(213,17,46);
-    background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
     border-radius: 15px;
     display: flex;
     cursor: pointer;
@@ -1046,7 +1052,7 @@
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -1085,9 +1091,8 @@
     font-size: 20px;
   }
 
-  .datedition{
-    
-    color: rgb(206, 202, 202);
+  .datedition{    
+    color: rgb(150, 150, 150);
     font-weight: 600;
     font-size: 20px;
   }
@@ -1117,32 +1122,34 @@
   .info2{
     font-size: 15px;
     font-weight:600;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5px;
   }
 
   .info3{
     font-size:15px ;
     font-weight:600 ;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5px;    
   }
 
   .info4{
     font-size:15px ;
     font-weight:600 ;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5px;
   }
 
   .info5container{
-    height: 50px;
-    background-color: rgba(37, 37, 37, 0.3);
-    margin: 0 10%;
-    border-radius: 10px;
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .info5container:hover{
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
     scale: 1.05;
     transition: 0.2s;
   }

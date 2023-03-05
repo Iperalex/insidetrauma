@@ -127,14 +127,14 @@ iframe{
 }
 
 #uninsubrialogo {
-  width: 100%;
+  width: 96%;
   margin: 30px 0px 60px 0px;
 }
 
 #crilogo:hover,
   #unimilogo:hover,
   #uninsubrialogo:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.2s;
   }
 
