@@ -9,7 +9,7 @@
               <div class="submask2 text-white">
                 <h1 id=testo1 class="testo mb-3">INSIDE TRAUMA</h1>
                 <h4 id=testo2 class="testo mb-3">...in trauma, we CARE!</h4>
-                <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
+                <a class="btn btn-outline-light btn-lg" href="#page-1" role="button">Formazione</a>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
     </div>
     
     <!-- formazione -->
-    <div class="container-fluid my-3">
+    <div class="container-fluid my-3" id="page-1">
       <div class="row">
         <div class="mx-4 col-12">
           <div class="titles py-3">
@@ -80,9 +80,9 @@
                 <h1 class="info1">{{ element.info1 }}</h1>
                 <h2 class="info2">{{ element.info2 }}</h2>
                 <h3 class="info3">{{ element.info3 }}</h3>
-                <h4 class="info4">{{ element.info4 }}</h4>
+                <h4 class="info4"><a class="mailto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
                 <div class="info5container">
-                  <a style="text-decoration:none" href="./#/formazione/">
+                  <a style="text-decoration:none" target="_blank" href="https://drive.google.com/file/d/1OonCNNTfLXqyq5-1mj5Ou2eph65JDLoO/view?usp=sharing">
                     <h5 class="info5">{{ element.info5 }}</h5>
                   </a>
                 </div>
@@ -96,7 +96,7 @@
     <!-- /Formazione-->
 
     <!-- faculties -->
-    <div class="container-fluid my-3">
+    <div class="container-fluid my-3" id="page-2">
       <div class="row">
         <div class="mx-4 col-12">
           <div class="titles py-3">
@@ -118,7 +118,7 @@
 
 
     <!--review-->
-    <div class="container-fluid my-3">
+    <div class="container-fluid my-3" id="page-3">
       <div class="row">
         <div class="rev-section">
           <div class="titles py-3">
@@ -182,7 +182,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
+                <div id="page-3" class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
                   <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
                 </div>
               </div>
@@ -192,6 +192,10 @@
       </div>
     </div>
     <!--/review-->
+
+    <!--scroll top button-->
+    <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+    <!--/scroll top button-->
   </div>
 
 </template>
@@ -211,6 +215,7 @@
         
         present: 0,
         intvl: null,
+  
         items:[
 
             {
@@ -313,8 +318,8 @@
             date:"22-23-24 Marzo 2023",
             info1:"Gestione avanzata del trauma maggiore",
             info2:"Corso per Specializzandi",
-            info3:"",
-            info4:"Info e iscrizione: info@insidetrauma.it",
+            info3:"Info e iscrizione:",
+            info4:"info@insidetrauma.it",
             info5:"Programma del corso"
           },
           {
@@ -322,15 +327,15 @@
             date:"26-27-28 Settembre 2023",
             info1:"Gestione avanzata del trauma maggiore",
             info2:"Corso per Specialisti",
-            info3:"",
-            info4:"Info e iscrizione: info@insidetrauma.it",
-            info5:"Programma del corso TBA"
+            info3:"Info e iscrizione:",
+            info4:"info@insidetrauma.it",
+            
           },
           {
             title:"inside trauma care specializzandi",
             date:"Feb 2023 - Corso Concluso",
             info1:"Corso Concluso",
-            info5:"Iscrizioni chiuse"
+            info3:"Iscrizioni chiuse",
           },
         ]
       }
@@ -443,6 +448,7 @@
 
     },
 
+    
     mounted: function(){
 
         this.hoverOut();
@@ -1011,11 +1017,26 @@
     margin: 0 5%;
   }
 
+  .mailto{
+    color:rgb(150, 150, 150);
+    text-decoration: none;
+  }
+
+  .mailto:hover{
+  color: white;
+  transition: 0.2s;
+  }
+
   .info5container{
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
     border-radius: 10px;
-    margin: 0 10%;
+    margin: 0 10%;     
+  }
+
+  .info5container:hover{
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
-    
+    scale: 1.05;
+    transition: 0.2s;
   }
 
   .info5{
@@ -1142,7 +1163,6 @@
 
   .info5container{
     box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
-    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1425,5 +1445,56 @@
 
 }
 /* /reviews */
+
+
+/* scroll top  */
+
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 70px;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+
+
+
+
+@media only screen and (min-width: 992px){
+
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+
+  .scroll-top:hover {
+    scale: 1.2;
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    opacity: 0.8;
+  }
+}
 
 </style>

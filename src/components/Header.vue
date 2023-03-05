@@ -34,25 +34,25 @@
         links:[
             {
               text: "Home",
-              url:"./#/",
+              url:"#",
               current: true,
             },
 
             {
               text: "Formazione",
-              url:"./#/formazione/",
+              url:"#page-1",
               current: false,
             },
 
             {
               text: "Faculty",
-              url:"./#/faculty/",
+              url:"#page-2",
               current: false,
             },
 
             {
               text: "Contatti",
-              url:"./#/contatti/",
+              url:"#page-3",
               current: false,
             },
         ]
