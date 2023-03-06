@@ -96,7 +96,8 @@ export default {
 .fa-instagram:hover,
 .fa-linkedin-in:hover,
 .locationCon:hover .fa-location-dot {
-  transform: scale(1.2);
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 iframe{
@@ -134,11 +135,11 @@ iframe{
 }
 
 #crilogo:hover,
-  #unimilogo:hover,
-  #uninsubrialogo:hover{
-    scale: 1.05;
-    transition: 0.2s;
-  }
+#unimilogo:hover,
+#uninsubrialogo:hover{
+  scale: 1.05;
+  transition: 0.2s;
+}
 
 .copy {
   font-size: 35px;
@@ -230,7 +231,7 @@ iframe{
   #crilogo:hover,
   #unimilogo:hover,
   #uninsubrialogo:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.2s;
   }
 

@@ -109,8 +109,8 @@
             <div class="role">{{ element.role }}</div>
             <div class="description">{{ element.description }}</div>
           </div>
-          <div class="col-4 photoBackground">
-            <img :src="element.photo" alt="">
+          <div class="col-4 photoBackground"><a :href="element.url" target="_blank">
+          <img :src="element.photo" alt=""></a>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
 
 
     <!--review-->
-    <div class="container-fluid my-3" id="page-3">
+    <div class="container-fluid my-3">
       <div class="row">
         <div class="rev-section">
           <div class="titles py-3">
@@ -182,7 +182,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <div id="page-3" class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
+                <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
                   <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
                 </div>
               </div>
@@ -251,63 +251,73 @@
         faculties:[
           {
             name:"Erika Borotto",
-            role:"role1",
+            role:"Founder & Istruttore - Rianimatore Varese",
             photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1681948800&v=beta&t=bcnqYqkDGt4Mo_1SY8N6jUmEHdmUA3J6DQvG8SRaHB0",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/erika-borotto-79a4a796/",
           },
           {
             name:"Murad Odeh",
-            role:"role2",
+            role:"Istruttore - Ch. d'urgenza Varese",
             photo:"https://media.licdn.com/dms/image/C4D03AQHSnyQCezgPQg/profile-displayphoto-shrink_800_800/0/1651329152605?e=1681948800&v=beta&t=ammwSogQrOE2XZGojqPG291H32CuF6IHz9mDVxVhQvU",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/murad-odeh-37883664/",
           },
           {
             name:"Fabrizio Sammartano",
-            role:"role3",
+            role:"Istruttore - Ch. d'urgenza San Carlo (MI) ",
             photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
           },
           {
             name:"Benedetta Franchi",
-            role:"role4",
+            role:"Istruttore - Rianimatore Varese",
             photo:"https://media.licdn.com/dms/image/C4E03AQGJHlHa8uKV3A/profile-displayphoto-shrink_800_800/0/1654029029411?e=1681948800&v=beta&t=mrIa66rEMlmPlYNq6ps6a-B4pmLiBdpyR7s8mBNGeFg",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/benedetta-franchi-baa19056/",
           },
           {
-            name:"name5",
-            role:"role5",
-            photo:"https://www.seekpng.com/png/detail/803-8038944_happy-person-png-tecnologia-de-la-felicidad.png",
+            name:"Federica Giuffrida",
+            role:"Istruttore - Rianimatore Varese",
+            photo:"https://i.pinimg.com/564x/39/1e/e1/391ee12077ba9cabd10e476d8b8c022b.jpg",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/federica-giuffrida-76609a9a/",
           },
           {
-            name:"name6",
+            name:"Luca Carenzo",
             role:"role6",
-            photo:"https://www.pngfind.com/pngs/m/61-619937_happy-person-jumping-png-happy-woman-transparent-background.png",
+            photo:"https://media.licdn.com/dms/image/C4E03AQGT6hUq-EK4og/profile-displayphoto-shrink_800_800/0/1607160575853?e=1683763200&v=beta&t=CNOfNKqMbrxR9ipbnKbtF4L30kujkTJJtA2TRH1V2kk",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/carenzmd/",
           },
           {
-            name:"name7",
-            role:"role7",
-            photo:"https://www.pngfind.com/pngs/m/61-619282_happy-person-png-transparent-png.png",
+            name:"Roberto Bini",
+            role:"Istruttore - Ch. d'urgenza Niguarda (MI)",
+            photo:"https://media.licdn.com/dms/image/C4D03AQEbIaE8d4a8lQ/profile-displayphoto-shrink_800_800/0/1563741287546?e=1683763200&v=beta&t=HEoK3s0VyDgVq-SEEwHMB02sg6OUrqly_wJhWInANBE",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/roberto-bini-23b05b11a/",
           },
           {
-            name:"name8",
-            role:"role8",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            name:"Chiara Novelli",
+            role:"Istruttore - Diagnostica Emostasi e Trombosi Legnano",
+            photo:"https://media.licdn.com/dms/image/C4E03AQEfnorG4cklvQ/profile-displayphoto-shrink_400_400/0/1516926062285?e=1683763200&v=beta&t=lcaC0JS5HORB9O_kIsDKdnHjahi1San-sDqjq9wQpMk",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/chiara-novelli-b64a3999/",
           },
           {
-            name:"name9",
-            role:"role9",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            name:"Giancarlo Gini",
+            role:"Istruttore - Pronto Soccorso Varese",
+            photo:"https://media.licdn.com/dms/image/C4E03AQEnHgQ8C8HjFQ/profile-displayphoto-shrink_800_800/0/1635791465187?e=1683763200&v=beta&t=8O_Fi4H5gjoo19KZBLw5PmIrNERbpGmw4Q6PBkjaP7g",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/giancarlo-gini-6a022547/",
           },
           {
-            name:"name10",
-            role:"role10",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
+            name:"Massimiliano Geli",
+            role:"Istruttore CRM - Senior Captain ",
+            photo:"https://media.licdn.com/dms/image/C4D03AQHIeHRMzLKlug/profile-displayphoto-shrink_800_800/0/1582741030593?e=1683763200&v=beta&t=1Fxd4dDtqU21sqGMN021JysSdxIHEBxmH1HwJZ9qQ1E",
             description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            url:"https://www.linkedin.com/in/massimiliano-geli-12595b1a2/",
           }
         ],
 
@@ -648,9 +658,10 @@
 
   .prev:hover,
   .next:hover{
-    scale: 1.1;
-
+    scale: 1.05;
+    transition: 0.2s;
   }
+
   .fa-chevron-right,
   .fa-chevron-left{
     font-size: 60px;
@@ -689,7 +700,7 @@
 
   .circleCon:hover{
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.2s;
   }
 
@@ -812,9 +823,10 @@
 
   .prev:hover,
   .next:hover{
-    scale: 1.1;
-
+    scale: 1.05;
+    transition: 0.2s;
   }
+
   .fa-chevron-right,
   .fa-chevron-left{
     font-size: 40px;
@@ -1195,21 +1207,22 @@
   }
 
   .name{
-    font-size: 70px;
-    font-weight: 800;
+    font-size: 65px;
+    font-weight: 700;
     text-transform: uppercase;
   }
 
   .role{
     font-size: 55px;
-    font-weight: 700;
-    padding-left: 15px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
   }
 
   .description {
     font-size: 50px;
     text-align: justify;
-    padding: 0px 20px;
+    padding: 0px 15px;
+    color: rgb(150, 150, 150);
  }
 
   .photoBackground{
@@ -1217,7 +1230,14 @@
     width: 310px;
     border-radius: 50%;
     overflow: hidden;
-    border: 10px solid #D5112E;
+    border: 10px solid #D5112E;    
+  }
+
+  .photoBackground:hover{
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    scale: 1.05;
+    transition: 0.2s;
+    cursor: pointer;
   }
 
   .photoBackground img{
@@ -1244,15 +1264,13 @@
 
   .role{
     font-size: 20px;
-    font-weight: 700;
-    padding-left: 15px;
+    font-weight: 500;
   }
 
   .description {
     font-size: 15px;
     text-align: justify;
-    padding-left: 5px;
-    padding-right: 20px;
+    padding: 0 10px;
   }
 
   .photoBackground{
