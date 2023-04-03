@@ -260,7 +260,7 @@
             name:"Fabrizio Sammartano",
             role:"Chirurgo d’urgenza e del Trauma, Velista, Microbirraio…",
             photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
-            description:"Non sempre in quest’ordine! Ho lavorato 15 anni a Niguarda, ora dirigo il Trauma team dell’Ospedale San Carlo di Milano, collaboro con Medecins Sans Frontieres. Mi occupo di formazione da più di 15 anni. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
+            description:"Non sempre in quest’ordine! Dopo 15 anni a Niguarda, dirigo il Trauma team dell’Ospedale San Carlo di Milano, collaboro con MSF. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
             url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
           },
           {
@@ -1158,9 +1158,8 @@
 
 /* faculties */
 .cardFaculties{
-    height: 850px;
     width: 100%;
-    margin: 60px 0px;
+    margin: 90px 0px;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;

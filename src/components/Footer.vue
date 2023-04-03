@@ -88,7 +88,7 @@ export default {
 .fa-instagram,
 .fa-linkedin-in {
   font-size: 160px; 
-  margin: 100px 50px; 
+  margin: 100px 100px; 
   transition: all 0.3s ease;
 }
 
