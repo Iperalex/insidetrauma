@@ -82,7 +82,7 @@
                 <h3 class="info3">{{ element.info3 }}</h3>
                 <h4 class="info4"><a class="mailto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
                 <div class="info5container">
-                  <a style="text-decoration:none" target="_blank" href="https://drive.google.com/file/d/1OonCNNTfLXqyq5-1mj5Ou2eph65JDLoO/view?usp=sharing">
+                  <a style="text-decoration:none" target="_blank" href="https://drive.google.com/file/d/1tZTr-kYNG0J0s0r7UfFrPER8vBW1FHHo/view?usp=sharing">
                     <h5 class="info5">{{ element.info5 }}</h5>
                   </a>
                 </div>
@@ -251,86 +251,46 @@
         faculties:[
           {
             name:"Erika Borotto",
-            role:"Founder & Istruttore - Rianimatore Varese",
-            photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1681948800&v=beta&t=bcnqYqkDGt4Mo_1SY8N6jUmEHdmUA3J6DQvG8SRaHB0",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            role:"Istruttore IRC, ATLS, WINFOCUS/SIMEU, MRMI",
+            photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1686182400&v=beta&t=VUzKRx5d--d7K58nlW45D5ip5YMgqEv4O_26S68SVOQ",
+            description:"Eremita pentita, entusiasta ad oltranza...se è vero che per rimanere in equilibrio è necessario un movimento continuo, come in bicicletta... chi si ferma è perduto!",
             url:"https://www.linkedin.com/in/erika-borotto-79a4a796/",
           },
           {
-            name:"Murad Odeh",
-            role:"Istruttore - Ch. d'urgenza Varese",
-            photo:"https://media.licdn.com/dms/image/C4D03AQHSnyQCezgPQg/profile-displayphoto-shrink_800_800/0/1651329152605?e=1681948800&v=beta&t=ammwSogQrOE2XZGojqPG291H32CuF6IHz9mDVxVhQvU",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-            url:"https://www.linkedin.com/in/murad-odeh-37883664/",
-          },
-          {
             name:"Fabrizio Sammartano",
-            role:"Istruttore - Ch. d'urgenza San Carlo (MI) ",
+            role:"Chirurgo d’urgenza e del Trauma, Velista, Microbirraio…",
             photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            description:"Non sempre in quest’ordine! Ho lavorato 15 anni a Niguarda, ora dirigo il Trauma team dell’Ospedale San Carlo di Milano, collaboro con Medecins Sans Frontieres. Mi occupo di formazione da più di 15 anni. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
             url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
           },
           {
-            name:"Benedetta Franchi",
-            role:"Istruttore - Rianimatore Varese",
-            photo:"https://media.licdn.com/dms/image/C4E03AQGJHlHa8uKV3A/profile-displayphoto-shrink_800_800/0/1654029029411?e=1681948800&v=beta&t=mrIa66rEMlmPlYNq6ps6a-B4pmLiBdpyR7s8mBNGeFg",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-            url:"https://www.linkedin.com/in/benedetta-franchi-baa19056/",
-          },
-          {
             name:"Federica Giuffrida",
-            role:"Istruttore - Rianimatore Varese",
-            photo:"https://i.pinimg.com/564x/39/1e/e1/391ee12077ba9cabd10e476d8b8c022b.jpg",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            role:"Istruttore - Terapia Intensiva Varese",
+            photo:"https://insidetrauma.it/Foto/giuffridaprofile.jpg",
+            description:"MD Emergency and critical care Sport, travel and adventure lover",
             url:"https://www.linkedin.com/in/federica-giuffrida-76609a9a/",
           },
-          {
-            name:"Luca Carenzo",
-            role:"role6",
-            photo:"https://media.licdn.com/dms/image/C4E03AQGT6hUq-EK4og/profile-displayphoto-shrink_800_800/0/1607160575853?e=1683763200&v=beta&t=CNOfNKqMbrxR9ipbnKbtF4L30kujkTJJtA2TRH1V2kk",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-            url:"https://www.linkedin.com/in/carenzmd/",
-          },
-          {
-            name:"Roberto Bini",
-            role:"Istruttore - Ch. d'urgenza Niguarda (MI)",
-            photo:"https://media.licdn.com/dms/image/C4D03AQEbIaE8d4a8lQ/profile-displayphoto-shrink_800_800/0/1563741287546?e=1683763200&v=beta&t=HEoK3s0VyDgVq-SEEwHMB02sg6OUrqly_wJhWInANBE",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-            url:"https://www.linkedin.com/in/roberto-bini-23b05b11a/",
-          },
-          {
-            name:"Chiara Novelli",
-            role:"Istruttore - Diagnostica Emostasi e Trombosi Legnano",
-            photo:"https://media.licdn.com/dms/image/C4E03AQEfnorG4cklvQ/profile-displayphoto-shrink_400_400/0/1516926062285?e=1683763200&v=beta&t=lcaC0JS5HORB9O_kIsDKdnHjahi1San-sDqjq9wQpMk",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-            url:"https://www.linkedin.com/in/chiara-novelli-b64a3999/",
-          },
+
           {
             name:"Giancarlo Gini",
-            role:"Istruttore - Pronto Soccorso Varese",
-            photo:"https://media.licdn.com/dms/image/C4E03AQEnHgQ8C8HjFQ/profile-displayphoto-shrink_800_800/0/1635791465187?e=1683763200&v=beta&t=8O_Fi4H5gjoo19KZBLw5PmIrNERbpGmw4Q6PBkjaP7g",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            role:"Istruttore - Direttore corsi Ecografia SIMEU",
+            photo:"https://insidetrauma.it/Foto/giniprofile.jpg",
+            description:"Dicono di lui: la sonda non la usa, l’accarezza come se fosse una bella donna",
             url:"https://www.linkedin.com/in/giancarlo-gini-6a022547/",
           },
-          {
-            name:"Massimiliano Geli",
-            role:"Istruttore CRM - Senior Captain ",
-            photo:"https://media.licdn.com/dms/image/C4D03AQHIeHRMzLKlug/profile-displayphoto-shrink_800_800/0/1582741030593?e=1683763200&v=beta&t=1Fxd4dDtqU21sqGMN021JysSdxIHEBxmH1HwJZ9qQ1E",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-            url:"https://www.linkedin.com/in/massimiliano-geli-12595b1a2/",
-          }
         ],
 
         formazioni:[
 
           {
-            title:"inside trauma care specializzandi",
-            date:"22-23-24 Marzo 2023",
-            info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specializzandi",
+            title:"3° Seminario Stop The Bleed",
+            date:"12 Giugno 2023",
+            info1:"3° Seminario Stop The Bleed",
+            info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
             info3:"Info e iscrizione:",
             info4:"info@insidetrauma.it",
-            info5:"Programma del corso"
+            info5:"Vedi il programma del corso",
+            
           },
           {
             title:"inside trauma care specialisti",
@@ -343,7 +303,7 @@
           },
           {
             title:"inside trauma care specializzandi",
-            date:"Feb 2023 - Corso Concluso",
+            date:"Marzo 2023 - Corso Concluso",
             info1:"Corso Concluso",
             info3:"Iscrizioni chiuse",
           },

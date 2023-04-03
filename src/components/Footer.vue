@@ -3,9 +3,9 @@
     <div class="footercontainer" >
       <div class="footerdiv" id="page-3">
         <div class="socialdiv">
-          <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <!--<a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>-->
           <a href="https://www.instagram.com/insidetraumacare/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/erika-borotto-79a4a796/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
 
