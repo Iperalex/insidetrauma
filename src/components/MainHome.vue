@@ -95,7 +95,7 @@
 
     <!-- /Formazione-->
 
-    <!-- faculties -->
+    <!-- Faculties -->
     <div class="container-fluid my-3" id="page-2">
       <div class="row">
         <div class="mx-4 col-12">
@@ -251,21 +251,21 @@
         faculties:[
           {
             name:"Erika Borotto",
-            role:"Istruttore IRC, ATLS, WINFOCUS/SIMEU, MRMI",
+            role:"Terapia Intensiva - Varese",
             photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1686182400&v=beta&t=VUzKRx5d--d7K58nlW45D5ip5YMgqEv4O_26S68SVOQ",
-            description:"Eremita pentita, entusiasta ad oltranza...se è vero che per rimanere in equilibrio è necessario un movimento continuo, come in bicicletta... chi si ferma è perduto!",
+            description:"Istruttore IRC, ATLS, WINFOCUS/SIMEU, MRMI. Eremita pentita, entusiasta ad oltranza...se è vero che per rimanere in equilibrio è necessario un movimento continuo, come in bicicletta... chi si ferma è perduto!",
             url:"https://www.linkedin.com/in/erika-borotto-79a4a796/",
           },
           {
             name:"Fabrizio Sammartano",
-            role:"Chirurgo d’urgenza e del Trauma, Velista, Microbirraio…",
+            role:"Chirurgia d'Urgenza - San Carlo (MI)",
             photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
-            description:"Non sempre in quest’ordine! Dopo 15 anni a Niguarda, dirigo il Trauma team dell’Ospedale San Carlo di Milano, collaboro con MSF. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
+            description:"Chirugo, Velista, Microbirraio ... Non sempre in quest’ordine! Dopo 15 anni a Niguarda, dirigo il Trauma team dell’Ospedale San Carlo (MI), collaboro con MSF. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
             url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
           },
           {
             name:"Federica Giuffrida",
-            role:"Istruttore - Terapia Intensiva Varese",
+            role:"Terapia Intensiva - Varese",
             photo:"https://insidetrauma.it/Foto/giuffridaprofile.jpg",
             description:"MD Emergency and critical care Sport, travel and adventure lover",
             url:"https://www.linkedin.com/in/federica-giuffrida-76609a9a/",
@@ -273,10 +273,24 @@
 
           {
             name:"Giancarlo Gini",
-            role:"Istruttore - Direttore corsi Ecografia SIMEU",
+            role:"Pronto Soccorso - Varese",
             photo:"https://insidetrauma.it/Foto/giniprofile.jpg",
-            description:"Dicono di lui: la sonda non la usa, l’accarezza come se fosse una bella donna",
+            description:"Direttore corsi Ecografia SIMEUDicono di lui: la sonda non la usa, l’accarezza come se fosse una bella donna",
             url:"https://www.linkedin.com/in/giancarlo-gini-6a022547/",
+          },
+          {
+            name:"Roberto Bini",
+            role:"Chirurgia d'Urgenza - Niguarda (MI)",
+            photo:"https://www.insidetrauma.it/Foto/biniprofile.jpg",
+            description:"Sopravvissuto al Bronx di Torino, teorico dell’emergenza con calma e aspirante opossum. La forza del team è nel singolo e la forza del singolo è il team.",
+            url:"https://www.linkedin.com/in/roberto-bini-23b05b11a/",
+          },
+          {
+            name:"Chiara Bonenti",
+            role:"Terapia Intensiva - Niguarda (MI)",
+            photo:"https://www.insidetrauma.it/Foto/bonentiprofile.jpg",
+            description:"Rianimatore, Istruttrice IRC e sognatrice dentro, fuori e tutt'attorno!  Nata come volontaria in ambulanza, professionalmente cresciuta a Varese e poi migrata a Niguarda, nel tentativo (utopico) di colmare la mia curiosità e voglia di nuove avventure!",
+            url:"https://www.linkedin.com/in/chiara-bonenti-75141b48/",
           },
         ],
 
@@ -303,9 +317,11 @@
           },
           {
             title:"inside trauma care specializzandi",
-            date:"Marzo 2023 - Corso Concluso",
-            info1:"Corso Concluso",
-            info3:"Iscrizioni chiuse",
+            date:"29-30 Nov, 1 Dic 2023",
+            info1:"Gestione avanzata del trauma maggiore",
+            info2:"Corso per Specializzandi",
+            info3:"Info e iscrizione:",
+            info4:"info@insidetrauma.it",
           },
         ]
       }
@@ -909,6 +925,7 @@
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
+    background-color: rgba(0, 0, 0, 0.15);
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
   }
 
@@ -928,7 +945,7 @@
   .flip-card-front {
     flex-direction: column;
     justify-content: space-evenly;
-
+    
   }
 
   .flip-card-back {
@@ -1179,7 +1196,6 @@
 
   .description {
     font-size: 50px;
-    text-align: justify;
     padding: 0px 15px;
     color: rgb(150, 150, 150);
  }
@@ -1228,7 +1244,6 @@
 
   .description {
     font-size: 15px;
-    text-align: justify;
     padding: 0 10px;
   }
 
