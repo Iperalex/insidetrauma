@@ -259,7 +259,7 @@
           {
             name:"Fabrizio Sammartano",
             role:"Chirurgia d'Urgenza - San Carlo (MI)",
-            photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
+            photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1687996800&v=beta&t=Xxuytu5Uqqw4A4ocpRspw_GGf11nlTnxIjwlzpa9qoo",
             description:"Chirugo, Velista, Microbirraio ... Non sempre in quest’ordine! Dopo 15 anni a Niguarda, dirigo il Trauma team dell’Ospedale San Carlo (MI), collaboro con MSF. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
             url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
           },
@@ -275,7 +275,7 @@
             name:"Giancarlo Gini",
             role:"Pronto Soccorso - Varese",
             photo:"https://insidetrauma.it/Foto/giniprofile.jpg",
-            description:"Direttore corsi Ecografia SIMEUDicono di lui: la sonda non la usa, l’accarezza come se fosse una bella donna",
+            description:"Direttore corsi Ecografia SIMEU. Dicono di lui: la sonda non la usa, l’accarezza come se fosse una bella donna",
             url:"https://www.linkedin.com/in/giancarlo-gini-6a022547/",
           },
           {
@@ -289,8 +289,15 @@
             name:"Chiara Bonenti",
             role:"Terapia Intensiva - Niguarda (MI)",
             photo:"https://www.insidetrauma.it/Foto/bonentiprofile.jpg",
-            description:"Rianimatore, Istruttrice IRC e sognatrice dentro, fuori e tutt'attorno!  Nata come volontaria in ambulanza, professionalmente cresciuta a Varese e poi migrata a Niguarda, nel tentativo (utopico) di colmare la mia curiosità e voglia di nuove avventure!",
+            description:"Rianimatore, Istruttore IRC e sognatrice dentro, fuori e tutt'attorno!  Nata come volontaria in ambulanza, professionalmente cresciuta a Varese e poi migrata a Niguarda, nel tentativo (utopico) di colmare la mia curiosità e voglia di nuove avventure!",
             url:"https://www.linkedin.com/in/chiara-bonenti-75141b48/",
+          },
+          {
+            name:"Benedetta Franchi",
+            role:"Terapia Intensiva - Varese",
+            photo:"https://media.licdn.com/dms/image/D4E03AQG53b8QW4HtiQ/profile-displayphoto-shrink_800_800/0/1681664113878?e=1687996800&v=beta&t=hJiOkEnvH29hR1c4MU1IkiQyYJT_Hp21Q4WmOpShtlo",
+            description:"Istruttore IRC, pasticceria Zen e guardie da leoni: specializzandi e infermieri nebulizzano acqua santa, la zia Benny ti fa fare cose che i tuoi genitori mai.",
+            url:"https://www.linkedin.com/in/benedetta-franchi-baa19056/",
           },
         ],
 
