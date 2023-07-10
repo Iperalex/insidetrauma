@@ -7,7 +7,7 @@
           <div class="mask">
             <div class="submask d-flex justify-content-center align-items-center h-100">
               <div class="submask2 text-white">
-                <h1 id=testo1 class="testo mb-3">INSIDE TRAUMA</h1>
+                <h1 id=testo1 class="testo mb-3">INSIDE TRAUMA CARE</h1>
                 <h4 id=testo2 class="testo mb-3">...in trauma, we CARE!</h4>
                 <a class="btn btn-outline-light btn-lg" href="#page-1" role="button">Formazione</a>
               </div>
@@ -252,14 +252,14 @@
           {
             name:"Erika Borotto",
             role:"Terapia Intensiva - Varese",
-            photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1686182400&v=beta&t=VUzKRx5d--d7K58nlW45D5ip5YMgqEv4O_26S68SVOQ",
+            photo:"https://insidetrauma.it/Foto/borottoprofile.jpg",
             description:"Istruttore IRC, ATLS, WINFOCUS/SIMEU, MRMI. Eremita pentita, entusiasta ad oltranza...se è vero che per rimanere in equilibrio è necessario un movimento continuo, come in bicicletta... chi si ferma è perduto!",
             url:"https://www.linkedin.com/in/erika-borotto-79a4a796/",
           },
           {
             name:"Fabrizio Sammartano",
             role:"Chirurgia d'Urgenza - San Carlo (MI)",
-            photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1687996800&v=beta&t=Xxuytu5Uqqw4A4ocpRspw_GGf11nlTnxIjwlzpa9qoo",
+            photo:"https://insidetrauma.it/Foto/sammartanoprofile.jpg",
             description:"Chirugo, Velista, Microbirraio ... Non sempre in quest’ordine! Dopo 15 anni a Niguarda, dirigo il Trauma team dell’Ospedale San Carlo (MI), collaboro con MSF. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
             url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
           },
@@ -295,7 +295,7 @@
           {
             name:"Benedetta Franchi",
             role:"Terapia Intensiva - Varese",
-            photo:"https://media.licdn.com/dms/image/D4E03AQG53b8QW4HtiQ/profile-displayphoto-shrink_800_800/0/1681664113878?e=1687996800&v=beta&t=hJiOkEnvH29hR1c4MU1IkiQyYJT_Hp21Q4WmOpShtlo",
+            photo:"https://insidetrauma.it/Foto/franchiprofile.jpg",
             description:"Istruttore IRC, pasticceria Zen e guardie da leoni: specializzandi e infermieri nebulizzano acqua santa, la zia Benny ti fa fare cose che i tuoi genitori mai.",
             url:"https://www.linkedin.com/in/benedetta-franchi-baa19056/",
           },
@@ -303,16 +303,6 @@
 
         formazioni:[
 
-          {
-            title:"3° Seminario Stop The Bleed",
-            date:"12 Giugno 2023",
-            info1:"3° Seminario Stop The Bleed",
-            info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
-            info3:"Info e iscrizione:",
-            info4:"info@insidetrauma.it",
-            info5:"Vedi il programma del corso",
-            
-          },
           {
             title:"inside trauma care specialisti",
             date:"26-27-28 Settembre 2023",
@@ -329,6 +319,16 @@
             info2:"Corso per Specializzandi",
             info3:"Info e iscrizione:",
             info4:"info@insidetrauma.it",
+          },
+          {
+            title:"3° Seminario Stop The Bleed",
+            date:"Corso terminato - 12 Giugno 2023",
+            info1:"3° Seminario Stop The Bleed",
+            info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
+            info3:"Iscrizioni chiuse",
+            info4:"info@insidetrauma.it",
+            info5:"Vedi il programma del corso",
+            
           },
         ]
       }
