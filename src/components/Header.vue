@@ -9,7 +9,6 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
-
       </div>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-sm-5 py-lg-0">
@@ -25,6 +24,7 @@
 
 
 
+
 <script>
   export default {
     name: "Header",
@@ -34,25 +34,25 @@
         links:[
             {
               text: "Home",
-              url:"./#/",
+              url:"#",
               current: true,
             },
 
             {
               text: "Formazione",
-              url:"./#/formazione/",
+              url:"#page-1",
               current: false,
             },
 
             {
               text: "Faculty",
-              url:"./#/faculty/",
+              url:"#page-2",
               current: false,
             },
 
             {
               text: "Contatti",
-              url:"./#/contatti/",
+              url:"#page-3",
               current: false,
             },
         ]
@@ -124,10 +124,6 @@
 
 
   /* hamburger */
-    .navbar-toggler{
-      color: transparent;
-    }
-
     .nav-item[data-v-61dd7a3d]{
       height: 76px;
       margin-bottom: 52px;
@@ -149,9 +145,9 @@
       height: 65px;
       width: 93px;
       border: none;
-      display: flex;
       justify-content: center;
       align-items: center;
+      color: transparent;
     }
 
     .fa-bars:hover {
@@ -166,21 +162,11 @@
 
   /* navbar, contiene links, mobile */
     .navbar-nav {
-      display: flex;      
-      flex-direction: column;
       position: absolute;
       right: 0;
-      width: 400px;
-      height: 1000px;
+      width: 450px;
       z-index: 1000;
       background-color: rgba(213, 17, 46, 0.9);
-    }
-
-    .nav-item{
-      height: 100%;
-      display: flex;
-      align-items: center;
-      background-color: transparent;
     }
 
     .nav-item a{
@@ -204,16 +190,14 @@
       transition: 0.2s all ease;
     }
 
-    nav{
-        width: 100%;
-    }
-
     .bg-light{
         background-color: transparent !important;
     }
 
     .nav-item{
-      height: 220px;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
       width: 100%;
       list-style: none;
       font-size: 70px;
@@ -240,18 +224,20 @@
         height: 100%;
       }
       .navbar-expand-lg .navbar-nav[data-v-61dd7a3d] {
-        width: 50%;
-        display: flex;
+        width: 40%;
         justify-content: space-around;
       }
 
         /* nav bar */
       nav{
         height: 100%;
+        width: 100%;
       }
 
       .navbar-nav{
         height: 100%;
+        width: 40%;
+        align-items: center;
       }
 
       .nav-item[data-v-61dd7a3d] {
@@ -270,20 +256,19 @@
       }
       
       /* navbar, contiene links, desktop */
-      .navbar-nav{
-        flex-direction: column;
-        align-items: center;      
-      }
-
+      
       .nav-item{
         list-style: none;
-        display: flex;
         align-items: center;
-        width: auto;
+        width: 25%;
+        height: 100%;
         font-size: 20px;
       }
-      /* /navbar, contiene links, desktop */
 
+      .nav-item a{
+        text-align: center;
+      }
+      /* /navbar, contiene links, desktop */
     }
 
   </style>

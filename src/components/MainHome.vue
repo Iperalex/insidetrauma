@@ -7,9 +7,9 @@
           <div class="mask">
             <div class="submask d-flex justify-content-center align-items-center h-100">
               <div class="submask2 text-white">
-                <h1 id=testo1 class="testo mb-3">INSIDE TRAUMA</h1>
+                <h1 id=testo1 class="testo mb-3">INSIDE TRAUMA CARE</h1>
                 <h4 id=testo2 class="testo mb-3">...in trauma, we CARE!</h4>
-                <a class="btn btn-outline-light btn-lg" href="./#/formazione/" role="button">Formazione</a>
+                <a class="btn btn-outline-light btn-lg" href="#page-1" role="button">Formazione</a>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
     </div>
     
     <!-- formazione -->
-    <div class="container-fluid my-3">
+    <div class="container-fluid my-3" id="page-1">
       <div class="row">
         <div class="mx-4 col-12">
           <div class="titles py-3">
@@ -80,9 +80,9 @@
                 <h1 class="info1">{{ element.info1 }}</h1>
                 <h2 class="info2">{{ element.info2 }}</h2>
                 <h3 class="info3">{{ element.info3 }}</h3>
-                <h4 class="info4">{{ element.info4 }}</h4>
+                <h4 class="info4"><a class="mailto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
                 <div class="info5container">
-                  <a style="text-decoration:none" href="./#/formazione/">
+                  <a style="text-decoration:none" target="_blank" href="https://drive.google.com/file/d/1tZTr-kYNG0J0s0r7UfFrPER8vBW1FHHo/view?usp=sharing">
                     <h5 class="info5">{{ element.info5 }}</h5>
                   </a>
                 </div>
@@ -93,8 +93,10 @@
       </div>
     </div>
 
-    <!-- faculties -->
-    <div class="container-fluid my-3">
+    <!-- /Formazione-->
+
+    <!-- Faculties -->
+    <div class="container-fluid my-3" id="page-2">
       <div class="row">
         <div class="mx-4 col-12">
           <div class="titles py-3">
@@ -107,89 +109,93 @@
             <div class="role">{{ element.role }}</div>
             <div class="description">{{ element.description }}</div>
           </div>
-          <div class="col-4 photoBackground">
-            <img :src="element.photo" alt="">
+          <div class="col-4 photoBackground"><a :href="element.url" target="_blank">
+          <img :src="element.photo" alt=""></a>
           </div>
         </div>
       </div>
     </div>
 
 
-    <!--rewiev-->
-    <div>
-      <div class="rev-section">
-        <div class="titles py-3">
-          <h1>Best reviews</h1>
-        </div>
-
-        <div class="reviews">
-
-          <div class="review">
-           <div class="head-review">
-             <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+    <!--review-->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="rev-section">
+          <div class="titles py-3">
+            <h1>Best reviews</h1>
+          </div>
+          <div class="reviews">
+            <div class="review">
+              <div class="head-review">
+                <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+              </div>
+              <div class="body-review">
+                <div class="name-review">Febbraio 2023</div>
+                <div class="place-review">Anonimo</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="desc-review1" @click='hiddentxt1'>Vi dirò solo che la settimana successiva al corso, in automedica, mi sono trovato a dover posizionare un accesso... 
+                  <p class="hiddentxt1"> intraosseo ed eseguire una minitoraco. Fino a 10 giorni fa non me lo sarei mai immaginato, e mi sono stupito positivamente del fatto che sapessi come muovermi, seppur con la giusta preoccupazione nel dover eseguire qualcosa di nuovo, invasivo e non propriamente usuale. Siete andati oltre le mie aspettative e, personalmente, mi avete dato tanto in termini di conoscenze, sicurezza nell’eseguire manovre che non avevo mai affrontato e voglia di continuare ad investire nelle mie competenze riguardanti il trauma.
+                  Ottimo bilanciamento tra lezioni teoriche, pratiche e simulazioni, ogni contributo è stato allo stesso tempo formativo ed interessante.
+                  Non posso fare altro che ringraziarvi!
+                  </p>
+                </div>
+              </div>
             </div>
-          <div class="body-review">
-            <div class="name-review">Febbraio 2023</div>
-            <div class="place-review">Anonimo</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+
+            <div class="review">
+              <div class="head-review">
+                <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+              </div>
+              <div class="body-review">
+                <div class="name-review">Dicembre 2022</div>
+                <div class="place-review">Anonimo</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="desc-review2" @click='hiddentxt2'>Corso molto formativo e stimolante, completo per gli argomenti trattati. Molto bello il coinvolgimento di diversi ... 
+                  <p class="hiddentxt2">relatori. Utilissimo fornire materiale e bibliografia pre-corso. Poco pubblicizzato</p>
+                </div>
+              </div>
             </div>
-            <div class="desc-review1" @click='hiddentxt1'>Vi dirò solo che la settimana successiva al corso, in automedica, mi sono trovato a dover posizionare un accesso intraosseo ed eseguire una minitoraco. Fino a 10 giorni fa non me lo sarei mai immaginato, e mi sono stupito ... 
-            <p class="hiddentxt1">positivamente del fatto che sapessi come muovermi, seppur con la giusta preoccupazione nel dover eseguire qualcosa di nuovo, invasivo e non propriamente usuale. Siete andati oltre le mie aspettative e, personalmente, mi avete dato tanto in termini di conoscenze, sicurezza nell’eseguire manovre che non avevo mai affrontato e voglia di continuare ad investire nelle mie competenze riguardanti il trauma.
-              Ottimo bilanciamento tra lezioni teoriche, pratiche e simulazioni, ogni contributo è stato allo stesso tempo formativo ed interessante.
-              Non posso fare altro che ringraziarvi!</p>
+
+            <div class="review">
+              <div class="head-review">
+                <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
+              </div>
+              <div class="body-review">
+                <div class="name-review">Novembre 2022</div>
+                <div class="place-review">Anonimo</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
+                  <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="review">
-          <div class="head-review">
-              <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
-          </div>
-        <div class="body-review">
-            <div class="name-review">Dicembre 2022</div>
-            <div class="place-review">Anonimo</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="desc-review2" @click='hiddentxt2'>Corso molto formativo e stimolante, completo per gli argomenti trattati. Molto bello il coinvolgimento di diversi relatori. Utilissimo fornire... 
-            <p class="hiddentxt2">materiale e bibliografia pre-corso. Poco pubblicizzato</p>
-            </div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="head-review">
-            <img class="user" src="https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo-1024x645.jpg" width="250px">
-        </div>
-        <div class="body-review">
-            <div class="name-review">Novembre 2022</div>
-            <div class="place-review">Anonimo</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="desc-review3" @click='hiddentxt3'>Il corso è strutturato benissimo! Apprezzata tantissimo la parte teorica, dal mio punto di vista fondamentale e direi...
-            <p class="hiddentxt3">completa per il tempo a disposizione! Belli gli scenari.. All'inizio difficile calarsi nella parte, ma via via ho notato i miglioramenti sia personali che all'interno del gruppo. Soprattutto impari a renderti conto dell'importanza del lavoro di squadra. Avrei preferito venisse indicato nella mail il costo effettivo del corso.</p>
-            </div>
-        </div>
       </div>
     </div>
+    <!--/review-->
 
-</div>
-
-    </div>
-
-
+    <!--scroll top button-->
+    <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+    <!--/scroll top button-->
   </div>
 
 </template>
@@ -209,6 +215,7 @@
         
         present: 0,
         intvl: null,
+  
         items:[
 
             {
@@ -244,81 +251,84 @@
         faculties:[
           {
             name:"Erika Borotto",
-            role:"role1",
-            photo:"https://media.licdn.com/dms/image/C4D03AQEhU2Dule77cA/profile-displayphoto-shrink_800_800/0/1581329870401?e=1681948800&v=beta&t=bcnqYqkDGt4Mo_1SY8N6jUmEHdmUA3J6DQvG8SRaHB0",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          },
-          {
-            name:"Murad Odeh",
-            role:"role2",
-            photo:"https://media.licdn.com/dms/image/C4D03AQHSnyQCezgPQg/profile-displayphoto-shrink_800_800/0/1651329152605?e=1681948800&v=beta&t=ammwSogQrOE2XZGojqPG291H32CuF6IHz9mDVxVhQvU",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            role:"Terapia Intensiva - Varese",
+            photo:"https://insidetrauma.it/Foto/borottoprofile.jpg",
+            description:"Istruttore IRC, ATLS, WINFOCUS/SIMEU, MRMI. Eremita pentita, entusiasta ad oltranza...se è vero che per rimanere in equilibrio è necessario un movimento continuo, come in bicicletta... chi si ferma è perduto!",
+            url:"https://www.linkedin.com/in/erika-borotto-79a4a796/",
           },
           {
             name:"Fabrizio Sammartano",
-            role:"role3",
-            photo:"https://media.licdn.com/dms/image/C4D03AQGkDMksVcX2zA/profile-displayphoto-shrink_800_800/0/1609970507341?e=1681948800&v=beta&t=VR70mjHEQrpwkQE7oesifMwNvZ_aKG2KhFZUyEVf9PY",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            role:"Chirurgia d'Urgenza - San Carlo (MI)",
+            photo:"https://insidetrauma.it/Foto/sammartanoprofile.jpg",
+            description:"Chirugo, Velista, Microbirraio ... Non sempre in quest’ordine! Dopo 15 anni a Niguarda, dirigo il Trauma team dell’Ospedale San Carlo (MI), collaboro con MSF. Nel trauma ci vuole metodo e rigore, ma anche saper osare nei momenti dove pochi lo farebbero",
+            url:"https://www.linkedin.com/in/fabrizio-sammartano-28b12ba2/",
+          },
+          {
+            name:"Federica Giuffrida",
+            role:"Terapia Intensiva - Varese",
+            photo:"https://insidetrauma.it/Foto/giuffridaprofile.jpg",
+            description:"MD Emergency and critical care Sport, travel and adventure lover",
+            url:"https://www.linkedin.com/in/federica-giuffrida-76609a9a/",
+          },
+
+          {
+            name:"Giancarlo Gini",
+            role:"Pronto Soccorso - Varese",
+            photo:"https://insidetrauma.it/Foto/giniprofile.jpg",
+            description:"Direttore corsi Ecografia SIMEU. Dicono di lui: la sonda non la usa, l’accarezza come se fosse una bella donna",
+            url:"https://www.linkedin.com/in/giancarlo-gini-6a022547/",
+          },
+          {
+            name:"Roberto Bini",
+            role:"Chirurgia d'Urgenza - Niguarda (MI)",
+            photo:"https://www.insidetrauma.it/Foto/biniprofile.jpg",
+            description:"Sopravvissuto al Bronx di Torino, teorico dell’emergenza con calma e aspirante opossum. La forza del team è nel singolo e la forza del singolo è il team.",
+            url:"https://www.linkedin.com/in/roberto-bini-23b05b11a/",
+          },
+          {
+            name:"Chiara Bonenti",
+            role:"Terapia Intensiva - Niguarda (MI)",
+            photo:"https://www.insidetrauma.it/Foto/bonentiprofile.jpg",
+            description:"Rianimatore, Istruttore IRC e sognatrice dentro, fuori e tutt'attorno!  Nata come volontaria in ambulanza, professionalmente cresciuta a Varese e poi migrata a Niguarda, nel tentativo (utopico) di colmare la mia curiosità e voglia di nuove avventure!",
+            url:"https://www.linkedin.com/in/chiara-bonenti-75141b48/",
           },
           {
             name:"Benedetta Franchi",
-            role:"role4",
-            photo:"https://media.licdn.com/dms/image/C4E03AQGJHlHa8uKV3A/profile-displayphoto-shrink_800_800/0/1654029029411?e=1681948800&v=beta&t=mrIa66rEMlmPlYNq6ps6a-B4pmLiBdpyR7s8mBNGeFg",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
+            role:"Terapia Intensiva - Varese",
+            photo:"https://insidetrauma.it/Foto/franchiprofile.jpg",
+            description:"Istruttore IRC, pasticceria Zen e guardie da leoni: specializzandi e infermieri nebulizzano acqua santa, la zia Benny ti fa fare cose che i tuoi genitori mai.",
+            url:"https://www.linkedin.com/in/benedetta-franchi-baa19056/",
           },
-          {
-            name:"name5",
-            role:"role5",
-            photo:"https://www.seekpng.com/png/detail/803-8038944_happy-person-png-tecnologia-de-la-felicidad.png",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          },
-          {
-            name:"name6",
-            role:"role6",
-            photo:"https://www.pngfind.com/pngs/m/61-619937_happy-person-jumping-png-happy-woman-transparent-background.png",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          },
-          {
-            name:"name7",
-            role:"role7",
-            photo:"https://www.pngfind.com/pngs/m/61-619282_happy-person-png-transparent-png.png",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          },
-          {
-            name:"name8",
-            role:"role8",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          },
-          {
-            name:"name9",
-            role:"role9",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          },
-          {
-            name:"name10",
-            role:"role10",
-            photo:"https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png",
-            description:"Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando",
-          }
         ],
 
         formazioni:[
+
           {
-            title:"1^ Edizione 2023",
-            date:"15-16-17 Febbraio",
-            info1:"Corso Concluso",
-            info5:"Iscrizioni al corso chiuse"
+            title:"inside trauma care specialisti",
+            date:"26-27-28 Settembre 2023",
+            info1:"Gestione avanzata del trauma maggiore",
+            info2:"Corso per Specialisti",
+            info3:"Info e iscrizione:",
+            info4:"info@insidetrauma.it",
+            
           },
           {
-            title:"2^ Edizione 2023",
-            date:"22-23-24 Marzo",
+            title:"inside trauma care specializzandi",
+            date:"29-30 Nov, 1 Dic 2023",
             info1:"Gestione avanzata del trauma maggiore",
-            info2:"Lezioni frontali",
-            info3:"Stazioni di esercitazioni pratiche per procedure di emergenza",
-            info4:"Simulazioni di scenari critici intra ed extra ospedalieri a complessità crescente",
-            info5:"programma e iscrizione"
+            info2:"Corso per Specializzandi",
+            info3:"Info e iscrizione:",
+            info4:"info@insidetrauma.it",
+          },
+          {
+            title:"3° Seminario Stop The Bleed",
+            date:"Corso terminato - 12 Giugno 2023",
+            info1:"3° Seminario Stop The Bleed",
+            info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
+            info3:"Iscrizioni chiuse",
+            info4:"info@insidetrauma.it",
+            info5:"Vedi il programma del corso",
+            
           },
         ]
       }
@@ -431,6 +441,7 @@
 
     },
 
+    
     mounted: function(){
 
         this.hoverOut();
@@ -483,7 +494,7 @@
 
   #testo2{
     font-size: 55px;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     font-weight: 500;
   }
 
@@ -523,7 +534,7 @@
 
   #testo2{
     font-size: 20px;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     font-weight: 500;
   }
 
@@ -630,9 +641,10 @@
 
   .prev:hover,
   .next:hover{
-    scale: 1.1;
-
+    scale: 1.05;
+    transition: 0.2s;
   }
+
   .fa-chevron-right,
   .fa-chevron-left{
     font-size: 60px;
@@ -671,7 +683,7 @@
 
   .circleCon:hover{
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.2s;
   }
 
@@ -794,9 +806,10 @@
 
   .prev:hover,
   .next:hover{
-    scale: 1.1;
-
+    scale: 1.05;
+    transition: 0.2s;
   }
+
   .fa-chevron-right,
   .fa-chevron-left{
     font-size: 40px;
@@ -912,8 +925,6 @@
   }
 
   .flip-card-inner{
-    background: rgb(213,17,46);
-    background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
     border-radius: 15px;
     display: flex;
     width: 100%;
@@ -921,7 +932,8 @@
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -940,7 +952,7 @@
   .flip-card-front {
     flex-direction: column;
     justify-content: space-evenly;
-
+    
   }
 
   .flip-card-back {
@@ -953,9 +965,9 @@
     transform: rotateY(180deg);
   }
 
-    /* testo frontale della card */
+  /* testo frontale della card */
   .numedition{
-    text-transform: uppercase;
+    text-transform:capitalize;
     color: white ;
     font-weight: 600;
     font-size: 70px;
@@ -963,7 +975,7 @@
 
   .datedition{
     margin-top: 0px;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     font-weight: 900;
     font-size: 55px;
   }
@@ -972,40 +984,55 @@
     display: none;
   }
 
-
   /* /testo frontale della card */
 
 
   /* testo retro della card */
   .info1{
-    font-size:70px;
+    font-size:65px;
     font-weight:700;
   }
 
   .info2{
     font-size: 55px;
     font-weight:400;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
   }
 
   .info3{
     font-size:55px ;
     font-weight:400 ;
-    color: rgb(206, 202, 202);    
+    color: rgb(150, 150, 150);    
     margin: 0 5%;
   }
 
   .info4{
     font-size:55px ;
     font-weight:400 ;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5%;
   }
 
+  .mailto{
+    color:rgb(150, 150, 150);
+    text-decoration: none;
+  }
+
+  .mailto:hover{
+  color: white;
+  transition: 0.2s;
+  }
+
   .info5container{
-    background-color: rgba(37, 37, 37, 0.3);
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
     border-radius: 10px;
-    margin: 0 4%;
+    margin: 0 10%;     
+  }
+
+  .info5container:hover{
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    scale: 1.05;
+    transition: 0.2s;
   }
 
   .info5{
@@ -1028,14 +1055,12 @@
 
   .flip-card{
     height: 100%;
-    width: 250px;
+    width: 300px;
     height: 350px;
     margin: 2%;
   }
 
   .flip-card-inner{
-    background: rgb(213,17,46);
-    background: linear-gradient(140deg, rgba(213,17,46,1) 0%, rgba(133,1,1,1) 100%);
     border-radius: 15px;
     display: flex;
     cursor: pointer;
@@ -1044,7 +1069,7 @@
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -1083,9 +1108,8 @@
     font-size: 20px;
   }
 
-  .datedition{
-    
-    color: rgb(206, 202, 202);
+  .datedition{    
+    color: rgb(150, 150, 150);
     font-weight: 600;
     font-size: 20px;
   }
@@ -1115,32 +1139,33 @@
   .info2{
     font-size: 15px;
     font-weight:600;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5px;
   }
 
   .info3{
     font-size:15px ;
     font-weight:600 ;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5px;    
   }
 
   .info4{
     font-size:15px ;
     font-weight:600 ;
-    color: rgb(206, 202, 202);
+    color: rgb(150, 150, 150);
     margin: 0 5px;
   }
 
   .info5container{
-    height: 50px;
-    background-color: rgba(37, 37, 37, 0.3);
-    margin: 0 10%;
-    border-radius: 10px;
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .info5container:hover{
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
     scale: 1.05;
     transition: 0.2s;
   }
@@ -1157,30 +1182,29 @@
 
 /* faculties */
 .cardFaculties{
-    height: 850px;
     width: 100%;
-    margin: 60px 0px;
+    margin: 90px 0px;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
 
   .name{
-    font-size: 70px;
-    font-weight: 800;
+    font-size: 65px;
+    font-weight: 700;
     text-transform: uppercase;
   }
 
   .role{
     font-size: 55px;
-    font-weight: 700;
-    padding-left: 15px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
   }
 
   .description {
     font-size: 50px;
-    text-align: justify;
-    padding: 0px 20px;
+    padding: 0px 15px;
+    color: rgb(150, 150, 150);
  }
 
   .photoBackground{
@@ -1188,7 +1212,14 @@
     width: 310px;
     border-radius: 50%;
     overflow: hidden;
-    border: 10px solid #D5112E;
+    border: 10px solid #D5112E;    
+  }
+
+  .photoBackground:hover{
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    scale: 1.05;
+    transition: 0.2s;
+    cursor: pointer;
   }
 
   .photoBackground img{
@@ -1215,15 +1246,12 @@
 
   .role{
     font-size: 20px;
-    font-weight: 700;
-    padding-left: 15px;
+    font-weight: 500;
   }
 
   .description {
     font-size: 15px;
-    text-align: justify;
-    padding-left: 5px;
-    padding-right: 20px;
+    padding: 0 10px;
   }
 
   .photoBackground{
@@ -1416,5 +1444,56 @@
 
 }
 /* /reviews */
+
+
+/* scroll top  */
+
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 70px;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+
+
+
+
+@media only screen and (min-width: 992px){
+
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+
+  .scroll-top:hover {
+    scale: 1.2;
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    opacity: 0.8;
+  }
+}
 
 </style>

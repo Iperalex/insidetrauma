@@ -1,11 +1,11 @@
 <template>
   
-    <div class="footercontainer">
-      <div class="footerdiv">
+    <div class="footercontainer" >
+      <div class="footerdiv" id="page-3">
         <div class="socialdiv">
-          <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <!--<a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>-->
           <a href="https://www.instagram.com/insidetraumacare/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/erika-borotto-79a4a796/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
 
@@ -13,7 +13,9 @@
         <div class="placediv">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1280904232653!2d8.846850280247098!3d45.79717735932529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478680c82b6a6383%3A0x3456bd822854a530!2sCroce%20Rossa%20Italiana%20-%20Comitato%20di%20Varese!5e0!3m2!1sit!2sit!4v1672679047895!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <a href="https://goo.gl/maps/GidgNuXQ9dyU1z9w5" class="locationCon" target="_blank"><i class="fa-solid fa-location-dot"></i> Via Jean Henry Dunant 2, Varese</a>
-        </div>
+            <div class="contactdiv">Email: <a class="mail" href="mailto:info@insidetrauma.it">info@insidetrauma.it</a></div>
+            <div class="contactdiv">Tel 0332 813163 - interno 1</div>
+          </div>
       </div>
 
       <div class="footerdiv">
@@ -86,7 +88,7 @@ export default {
 .fa-instagram,
 .fa-linkedin-in {
   font-size: 160px; 
-  margin: 100px 50px; 
+  margin: 100px 100px; 
   transition: all 0.3s ease;
 }
 
@@ -94,7 +96,8 @@ export default {
 .fa-instagram:hover,
 .fa-linkedin-in:hover,
 .locationCon:hover .fa-location-dot {
-  transform: scale(1.2);
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 iframe{
@@ -127,16 +130,16 @@ iframe{
 }
 
 #uninsubrialogo {
-  width: 100%;
+  width: 96%;
   margin: 30px 0px 60px 0px;
 }
 
 #crilogo:hover,
-  #unimilogo:hover,
-  #uninsubrialogo:hover{
-    scale: 1.1;
-    transition: 0.2s;
-  }
+#unimilogo:hover,
+#uninsubrialogo:hover{
+  scale: 1.05;
+  transition: 0.2s;
+}
 
 .copy {
   font-size: 35px;
@@ -144,6 +147,19 @@ iframe{
   justify-content: flex-end;
   margin-right: 5%;
 }
+
+.contactdiv{
+    color:rgb(150, 150, 150);
+    margin-left: 12%;
+  }
+
+  .mail{
+    text-decoration: none;   
+  }
+  .mail:hover{
+    color: white;
+  }
+
 
 
 
@@ -215,7 +231,7 @@ iframe{
   #crilogo:hover,
   #unimilogo:hover,
   #uninsubrialogo:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.2s;
   }
 
@@ -224,6 +240,15 @@ iframe{
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
+  }
+
+  .contactdiv{
+    color:rgb(150, 150, 150);
+    margin-left: 12%;
+  }
+
+  .mail{
+    text-decoration: none;   
   }
 }
 
