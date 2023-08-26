@@ -27,7 +27,7 @@
         </div>
 
         <div class="copy">
-          <p>INSIDE TRAUMA © 2023 - Tutti i diritti sono riservati</p>
+          <p>INSIDE TRAUMA CARE© 2023 - Tutti i diritti sono riservati</p>
         </div>
       </div>
     </div>
