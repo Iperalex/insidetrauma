@@ -79,11 +79,11 @@
               <div class="flip-card-back">
                 <h1 class="info1">{{ element.info1 }}</h1>
                 <h2 class="info2">{{ element.info2 }}</h2>
-                <h3 class="info3">{{ element.info3 }}</h3>
+                <h3 class="info3"><a class="mailto" style="text-decoration:none" target="_blank" href="https://secure.onlinecongress.it/onlinecongress/secure/form.aspx?GUID=9513646009337120823608386">{{ element.info3 }}</a></h3>
                 <h4 class="info4"><a class="mailto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
                 <div class="info5container">
-                  <a style="text-decoration:none" target="_blank" href="https://drive.google.com/file/d/1tZTr-kYNG0J0s0r7UfFrPER8vBW1FHHo/view?usp=sharing">
-                    <h5 class="info5">{{ element.info5 }}</h5>
+                  <a style="text-decoration:none" target="_blank" href="https://www.noemacongressi.it/wp-content/uploads/2023/05/23-08-04-Inside-Trauma-Care_programma.pdf">
+                  <h5 class="info5">{{ element.info5 }}</h5>
                   </a>
                 </div>
               </div>
@@ -304,20 +304,21 @@
         formazioni:[
 
           {
-            title:"inside trauma care specialisti",
+            title:"Inside Trauma Care",
             date:"26-27-28 Settembre 2023",
             info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specialisti",
-            info3:"Info e iscrizione:",
+            info2:"Corso per Specialisti e Specializzandi",
+            info3:"Iscriviti al corso",
             info4:"info@insidetrauma.it",
+            info5:"Vedi il programma del corso",
             
           },
           {
-            title:"inside trauma care specializzandi",
+            title:"Inside Trauma Care ",
             date:"29-30 Nov, 1 Dic 2023",
             info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specializzandi",
-            info3:"Info e iscrizione:",
+            info2:"Corso per Specialisti e Specializzandi",
+            info3:"Per Infromazioni:",
             info4:"info@insidetrauma.it",
           },
           {
@@ -327,7 +328,6 @@
             info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
             info3:"Iscrizioni chiuse",
             info4:"info@insidetrauma.it",
-            info5:"Vedi il programma del corso",
             
           },
         ]
