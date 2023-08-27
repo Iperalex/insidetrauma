@@ -79,13 +79,9 @@
               <div class="flip-card-back">
                 <h1 class="info1">{{ element.info1 }}</h1>
                 <h2 class="info2">{{ element.info2 }}</h2>
-                <h3 class="info3"><a class="mailto" style="text-decoration:none" target="_blank" href="https://secure.onlinecongress.it/onlinecongress/secure/form.aspx?GUID=9513646009337120823608386">{{ element.info3 }}</a></h3>
-                <h4 class="info4"><a class="mailto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
-                <div class="info5container">
-                  <a style="text-decoration:none" target="_blank" href="https://www.noemacongressi.it/wp-content/uploads/2023/05/23-08-04-Inside-Trauma-Care_programma.pdf">
-                  <h5 class="info5">{{ element.info5 }}</h5>
-                  </a>
-                </div>
+                <h3 class="info3"><a class="linkto" style="text-decoration:none" target="_blank" href="https://secure.onlinecongress.it/onlinecongress/secure/form.aspx?GUID=9513646009337120823608386">{{ element.info3 }}</a></h3>
+                <h4 class="info4">Info: <a class="linkto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
+                <h5 class="info5"><a class="linkto" target="_blank" href="https://www.noemacongressi.it/wp-content/uploads/2023/05/23-08-04-Inside-Trauma-Care_programma.pdf">{{ element.info5 }}</a></h5>
               </div>
             </div>
           </div>
@@ -318,7 +314,6 @@
             date:"29-30 Nov, 1 Dic 2023",
             info1:"Gestione avanzata del trauma maggiore",
             info2:"Corso per Specialisti e Specializzandi",
-            info3:"Per Infromazioni:",
             info4:"info@insidetrauma.it",
           },
           {
@@ -326,7 +321,6 @@
             date:"Corso terminato - 12 Giugno 2023",
             info1:"3° Seminario Stop The Bleed",
             info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
-            info3:"Iscrizioni chiuse",
             info4:"info@insidetrauma.it",
             
           },
@@ -1013,23 +1007,18 @@
     margin: 0 5%;
   }
 
-  .mailto{
+  .linkto{
     color:rgb(150, 150, 150);
     text-decoration: none;
   }
 
-  .mailto:hover{
+  .linkto:hover{
   color: white;
   transition: 0.2s;
   }
 
-  .info5container{
-    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
-    border-radius: 10px;
-    margin: 0 10%;     
-  }
 
-  .info5container:hover{
+  .info5:hover{
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
     scale: 1.05;
     transition: 0.2s;
@@ -1039,6 +1028,9 @@
     font-size: 55px;
     font-weight: 700;
     text-transform: uppercase;
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    margin: 0 10%;
   }
   /* /testo retro della card */
 
