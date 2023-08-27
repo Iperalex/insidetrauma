@@ -321,8 +321,7 @@
             date:"Corso terminato - 12 Giugno 2023",
             info1:"3° Seminario Stop The Bleed",
             info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
-            info4:"info@insidetrauma.it",
-            
+            info4:"info@insidetrauma.it", 
           },
         ]
       }
@@ -1149,14 +1148,14 @@
     margin: 0 5px;
   }
 
-  .info5container{
+  .info5{
     box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .info5container:hover{
+  .info5:hover{
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
     scale: 1.05;
     transition: 0.2s;
