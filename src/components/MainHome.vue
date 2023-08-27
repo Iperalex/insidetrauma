@@ -1148,13 +1148,6 @@
     margin: 0 5px;
   }
 
-  .info5{
-    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .info5:hover{
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
     scale: 1.05;
@@ -1164,6 +1157,10 @@
   .info5{
     font-size: 20px;
     text-transform: uppercase;
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, .25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /* /testo retro della card */
 }
