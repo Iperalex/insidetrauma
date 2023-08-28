@@ -311,9 +311,9 @@
           },
           {
             title:"Inside Trauma Care ",
-            date:"29-30 Nov, 1 Dic 2023",
+            date:"13-14-15 Dic 2023",
             info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specialisti e Specializzandi",
+            info2:"Corso per Specializzandi",
             info4:"info@insidetrauma.it",
           },
           {
