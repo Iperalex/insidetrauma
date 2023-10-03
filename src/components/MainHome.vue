@@ -299,22 +299,22 @@
 
         formazioni:[
 
-          {
-            title:"Inside Trauma Care",
-            date:"26-27-28 Settembre 2023",
-            info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specialisti e Specializzandi",
-            info3:"Iscriviti al corso",
-            info4:"info@insidetrauma.it",
-            info5:"Vedi il programma del corso",
-            
-          },
+
           {
             title:"Inside Trauma Care ",
             date:"13-14-15 Dic 2023",
             info1:"Gestione avanzata del trauma maggiore",
             info2:"Corso per Specializzandi",
             info4:"info@insidetrauma.it",
+          },
+          {
+            title:"Inside Trauma Care",
+            date:"Corso terminato - 26-27-28 Settembre 2023",
+            info1:"Gestione avanzata del trauma maggiore",
+            info2:"Corso per Specialisti e Specializzandi",
+            info4:"info@insidetrauma.it",
+            info5:"Vedi il programma del corso",
+            
           },
           {
             title:"3° Seminario Stop The Bleed",
