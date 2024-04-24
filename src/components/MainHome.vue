@@ -79,9 +79,9 @@
               <div class="flip-card-back">
                 <h1 class="info1">{{ element.info1 }}</h1>
                 <h2 class="info2">{{ element.info2 }}</h2>
-                <h3 class="info3"><a class="linkto" style="text-decoration:none" target="_blank" href="https://secure.onlinecongress.it/onlinecongress/secure/form.aspx?GUID=9513646009337120823608386">{{ element.info3 }}</a></h3>
-                <h4 class="info4">Info: <a class="linkto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
-                <h5 class="info5"><a class="linkto" target="_blank" href="https://www.noemacongressi.it/wp-content/uploads/2023/05/23-08-04-Inside-Trauma-Care_programma.pdf">{{ element.info5 }}</a></h5>
+                <h3 class="info3"><a class="linkto" style="text-decoration:none" target="_blank" href="https://drive.google.com/file/d/1wIzogni9azCKIoHyzHTcTlTI1FrIw5Ct/view?usp=drive_link">{{ element.info3 }}</a></h3>
+                <h4 class="info4">Iscriviti: <a class="linkto" href="mailto:info@insidetrauma.it">{{ element.info4 }}</a></h4>
+                <h5 class="info5"><a class="linkto" target="_blank" href="https://drive.google.com/file/d/1wIzogni9azCKIoHyzHTcTlTI1FrIw5Ct/view?usp=drive_link">{{ element.info5 }}</a></h5>
               </div>
             </div>
           </div>
@@ -299,29 +299,23 @@
 
         formazioni:[
 
-
-          {
-            title:"Inside Trauma Care ",
-            date:"13-14-15 Dic 2023",
-            info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specializzandi",
-            info4:"info@insidetrauma.it",
-          },
-          {
-            title:"Inside Trauma Care",
-            date:"Corso terminato - 26-27-28 Settembre 2023",
-            info1:"Gestione avanzata del trauma maggiore",
-            info2:"Corso per Specialisti e Specializzandi",
+        {
+            title:"Inside Trauma Care on Field",
+            date:"4° Seminario Stop The Bleed - 06/06/2024",
+            info1:"Inside Trauma Care on Field",
+            info2:"Scenari a squadre 5-6 persone",
+            info3:"06/06/2024",
             info4:"info@insidetrauma.it",
             info5:"Vedi il programma del corso",
-            
           },
+
           {
-            title:"3° Seminario Stop The Bleed",
-            date:"Corso terminato - 12 Giugno 2023",
-            info1:"3° Seminario Stop The Bleed",
-            info2:"Integrazione tra personale Medico e Vigili del Fuoco negli scenari incidentali Maggiori",
-            info4:"info@insidetrauma.it", 
+            title:"Inside Trauma Care",
+            date:"COMING SOON",
+            info1:"Gestione avanzata del trauma maggiore",
+            info2:"COMING SOON",
+            info4:"info@insidetrauma.it",            
+            
           },
         ]
       }

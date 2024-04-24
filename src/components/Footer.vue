@@ -12,7 +12,7 @@
       <div class="footerdiv">
         <div class="placediv">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1280904232653!2d8.846850280247098!3d45.79717735932529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478680c82b6a6383%3A0x3456bd822854a530!2sCroce%20Rossa%20Italiana%20-%20Comitato%20di%20Varese!5e0!3m2!1sit!2sit!4v1672679047895!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <a href="https://goo.gl/maps/GidgNuXQ9dyU1z9w5" class="locationCon" target="_blank"><i class="fa-solid fa-location-dot"></i> Via Jean Henry Dunant 2, Varese</a>
+          <a href="https://goo.gl/maps/GidgNuXQ9dyU1z9w5" class="locationCon" target="_blank"><i class="fa-solid fa-location-dot"></i> <i style="color:white">Via Jean Henry Dunant 2, Varese</i></a>
             <div class="contactdiv">Email: <a class="mail" href="mailto:info@insidetrauma.it">info@insidetrauma.it</a></div>
             <div class="contactdiv">Provider ECM: <a href="https://www.noemacongressi.it/" target="_blank">Noema Congressi</a></div>
           </div>
@@ -22,7 +22,6 @@
         <div class="loghidiv">
           <h2 class="partnertitle">In collaborazione con:</h2>
           <a href="https://www.crivarese.it/varese/" target="_blank"> <img id="crilogo" src="../assets/cri logo.png" alt="cri logo"></a>
-          <a href="https://www.unimi.it/" target="_blank"> <img id="unimilogo" src="../assets/unimi logo.png" alt="unimi logo"></a>
           <a href="https://www.uninsubria.it/" target="_blank"> <img id="uninsubrialogo" src="../assets/uninsubria logo.png" alt="uninsubria logo"></a>
         </div>
 
@@ -124,18 +123,12 @@ iframe{
   margin: 60px 0px 30px 30px;
 }
 
-#unimilogo{
-  width: 75%;
-  margin: 40px 0px 35px 40px;
-}
-
 #uninsubrialogo {
   width: 85%;
   margin: 80px 0px 60px 35px;
 }
 
 #crilogo:hover,
-#unimilogo:hover,
 #uninsubrialogo:hover{
   scale: 1.05;
   transition: 0.2s;
@@ -218,18 +211,12 @@ iframe{
     margin: 60px 0px 25px 13%;
   }
 
-  #unimilogo{
-    width: 50%;
-    margin: 40px 0px 30px 14%;
-  }
-
   #uninsubrialogo {
     width: 55%;
     margin: 30px 0px 20px 14%;
   }
 
   #crilogo:hover,
-  #unimilogo:hover,
   #uninsubrialogo:hover{
     scale: 1.05;
     transition: 0.2s;
